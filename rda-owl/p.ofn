@@ -1,0 +1,91 @@
+Prefix(:=<http://rdaregistry.info/Elements/p#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(reg:=<http://metadataregistry.org/uri/profile/regap/>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+Prefix(rdakit:=<http://metadataregistry.org/uri/profile/rdakit/>)
+
+
+Ontology(<http://rdaregistry.info/Elements/p>
+
+Declaration(Class(skos:Concept))
+Declaration(NamedIndividual(<http://metadataregistry.org/uri/RegStatus/1001>))
+Declaration(AnnotationProperty(rdakit:toolkitDefinition))
+Declaration(AnnotationProperty(rdakit:toolkitLabel))
+Declaration(AnnotationProperty(reg:hasUnconstrained))
+Declaration(AnnotationProperty(reg:lexicalAlias))
+Declaration(AnnotationProperty(reg:name))
+Declaration(AnnotationProperty(reg:status))
+Declaration(AnnotationProperty(dc:title))
+Declaration(AnnotationProperty(<http://rdaregistry.info/Elements/p/P70001>))
+Declaration(AnnotationProperty(<http://rdaregistry.info/Elements/p/P70002>))
+Declaration(AnnotationProperty(<http://rdaregistry.info/Elements/p/P70003>))
+Declaration(AnnotationProperty(skos:definition))
+Declaration(AnnotationProperty(skos:note))
+Declaration(AnnotationProperty(skos:prefLabel))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: <http://rdaregistry.info/Elements/p/P70001> (has name of a place)
+
+AnnotationAssertion(rdakit:toolkitDefinition <http://rdaregistry.info/Elements/p/P70001> "A word, character, or group of words and/or characters by which a place is known."@en)
+AnnotationAssertion(rdakit:toolkitLabel <http://rdaregistry.info/Elements/p/P70001> "name of a place"@en)
+AnnotationAssertion(reg:hasUnconstrained <http://rdaregistry.info/Elements/p/P70001> <http://rdaregistry.info/Elements/u/P60366>)
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/p/P70001> <http://rdaregistry.info/Elements/p/nameOfAPlace.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/p/P70001> "nameOfAPlace"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/p/P70001> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/p/P70001> <http://rdaregistry.info/Elements/p/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/p/P70001> "has name of a place"@en)
+AnnotationAssertion(skos:definition <http://rdaregistry.info/Elements/p/P70001> "Relates a place to a word, character, or group of words and/or characters by which a place is known."@en)
+AnnotationPropertyDomain(<http://rdaregistry.info/Elements/p/P70001> <http://rdaregistry.info/Elements/c/C10009>)
+
+# Annotation Property: <http://rdaregistry.info/Elements/p/P70002> (has preferred name for a place)
+
+AnnotationAssertion(rdakit:toolkitDefinition <http://rdaregistry.info/Elements/p/P70002> "A name or form of name chosen to identify a place."@en)
+AnnotationAssertion(rdakit:toolkitLabel <http://rdaregistry.info/Elements/p/P70002> "preferred name for a place"@en)
+AnnotationAssertion(reg:hasUnconstrained <http://rdaregistry.info/Elements/p/P70002> <http://rdaregistry.info/Elements/u/P60548>)
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/p/P70002> <http://rdaregistry.info/Elements/p/preferredNameForAPlace.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/p/P70002> "preferredNameForAPlace"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/p/P70002> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/p/P70002> <http://rdaregistry.info/Elements/p/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/p/P70002> "has preferred name for a place"@en)
+AnnotationAssertion(skos:definition <http://rdaregistry.info/Elements/p/P70002> "Relates a place to a name or form of name chosen to identify a place."@en)
+SubAnnotationPropertyOf(<http://rdaregistry.info/Elements/p/P70002> <http://rdaregistry.info/Elements/p/P70001>)
+AnnotationPropertyDomain(<http://rdaregistry.info/Elements/p/P70002> <http://rdaregistry.info/Elements/c/C10009>)
+
+# Annotation Property: <http://rdaregistry.info/Elements/p/P70003> (has variant name for a place)
+
+AnnotationAssertion(rdakit:toolkitDefinition <http://rdaregistry.info/Elements/p/P70003> "A name or form of name by which a place is known that differs from the name or form of name chosen as the preferred name."@en)
+AnnotationAssertion(rdakit:toolkitLabel <http://rdaregistry.info/Elements/p/P70003> "variant name for a place"@en)
+AnnotationAssertion(reg:hasUnconstrained <http://rdaregistry.info/Elements/p/P70003> <http://rdaregistry.info/Elements/u/P60880>)
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/p/P70003> <http://rdaregistry.info/Elements/p/variantNameForAPlace.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/p/P70003> "variantNameForAPlace"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/p/P70003> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/p/P70003> <http://rdaregistry.info/Elements/p/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/p/P70003> "has variant name for a place"@en)
+AnnotationAssertion(skos:definition <http://rdaregistry.info/Elements/p/P70003> "Relates a place to a name or form of name by which a place is known that differs from the name or form of name chosen as the preferred name."@en)
+SubAnnotationPropertyOf(<http://rdaregistry.info/Elements/p/P70003> <http://rdaregistry.info/Elements/p/P70001>)
+AnnotationPropertyDomain(<http://rdaregistry.info/Elements/p/P70003> <http://rdaregistry.info/Elements/c/C10009>)
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://metadataregistry.org/uri/RegStatus/1001> (<http://metadataregistry.org/uri/RegStatus/1001>)
+
+AnnotationAssertion(skos:prefLabel <http://metadataregistry.org/uri/RegStatus/1001> "Published"@en)
+ClassAssertion(skos:Concept <http://metadataregistry.org/uri/RegStatus/1001>)
+
+
+AnnotationAssertion(dc:title <http://rdaregistry.info/Elements/p/> "RDA Place properties"@en)
+AnnotationAssertion(skos:note <http://rdaregistry.info/Elements/p/> "Properties derived from RDA elements and relationship designators with the domain of RDA Place."@en)
+)
