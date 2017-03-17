@@ -6,11 +6,14 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.onto-med.de/ontologies/simpleanno/examples/impl_2015_03_s0305">
+    <Prefix name="" IRI="http://www.onto-med.de/ontologies/simpleanno/examples/impl_2015_03_s0305"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>file:/Users/ralph/Documents/Arbeit/SimpleAnno/Beispiele/rda-examples-rimmf/161108182437550/simpleanno00000016.n3</Import>
+    <Import>file:/Users/ralph/Documents/Arbeit/SimpleAnno/Beispiele/rda-examples-rimmf/simpleanno00000012.n3</Import>
     <Import>http://imise.uni-leipzig.de/simpleanno/ontologies/rda/all</Import>
 </Ontology>
 
