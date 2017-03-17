@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.w3.org/2004/02/skos/core" uri="file:/Users/ralph/Documents/Arbeit/SimpleAnno/Beispiele/rda-examples-owl/skos/skos.rdf"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/a/" uri="a.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/a/datatype/" uri="a/datatype.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/a/object/" uri="a/object.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/c" uri="c.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/e/" uri="e.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/e/datatype/" uri="e/datatype.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/e/object/" uri="e/object.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/i/" uri="i.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/i/datatype/" uri="i/datatype.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/i/object/" uri="i/object.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/m/" uri="m.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/m/datatype/" uri="m/datatype.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/m/object/" uri="m/object.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/n/" uri="n.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/n/datatype/" uri="n/datatype.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/n/object/" uri="n/object.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/p/" uri="p.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/p/datatype/" uri="p/datatype.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/p/object/" uri="p/object.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/rof/" uri="rof.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/t/" uri="t.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/t/datatype/" uri="t/datatype.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/t/object/" uri="t/object.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/u/" uri="u.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/w/" uri="w.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/w/datatype/" uri="w/datatype.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/w/object/" uri="w/object.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/x/" uri="x.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/x/datatype/" uri="x/datatype.xml"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/x/object/" uri="x/object.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1489681397181" name="http://rdaregistry.info/Elements/z/" uri="z.owl"/>
+    </group>
+</catalog>

@@ -7,9 +7,10 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://imise.uni-leipzig.de/simpleanno/ontologies/rda/all>
+
+Import(<http://www.w3.org/2004/02/skos/core>)
 Import(<http://rdaregistry.info/Elements/c>)
 Import(<http://rdaregistry.info/Elements/rof>)
-Import(<http://rdaregistry.info/Elements/t>)
 Import(<http://rdaregistry.info/Elements/u>)
 Import(<http://rdaregistry.info/Elements/z>)
 Import(<http://rdaregistry.info/Elements/a/object>)
