@@ -1,0 +1,625 @@
+Prefix(:=<http://purl.org/spar/frbr#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2008/05/skos#>)
+Prefix(swrl:=<http://www.w3.org/2003/11/swrl#>)
+
+
+Ontology(<http://purl.org/spar/frbr>
+Annotation(dc:creator "Paolo Ciccarese"^^xsd:string)
+Annotation(dc:creator "Silvio Peroni"^^xsd:string)
+Annotation(dc:date "2011-06-29")
+Annotation(dc:description "This vocabulary is an expression in OWL 2 DL of the basic concepts and relations described in the IFLA report on the Functional Requirements for Bibliographic Records (FRBR), also described in Ian Davis's RDF vocabulary (http://vocab.org/frbr/core)."@en)
+Annotation(dc:rights "This work is distributed under a Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0/)."@en)
+Annotation(dc:title "Essential FRBR in OWL2 DL"@en)
+
+Declaration(Class(<http://purl.org/vocab/frbr/core#Concept>))
+Declaration(Class(<http://purl.org/vocab/frbr/core#CorporateBody>))
+Declaration(Class(<http://purl.org/vocab/frbr/core#Endeavour>))
+Declaration(Class(<http://purl.org/vocab/frbr/core#Event>))
+Declaration(Class(<http://purl.org/vocab/frbr/core#Expression>))
+Declaration(Class(<http://purl.org/vocab/frbr/core#Item>))
+Declaration(Class(<http://purl.org/vocab/frbr/core#Manifestation>))
+Declaration(Class(<http://purl.org/vocab/frbr/core#Object>))
+Declaration(Class(<http://purl.org/vocab/frbr/core#Person>))
+Declaration(Class(<http://purl.org/vocab/frbr/core#Place>))
+Declaration(Class(<http://purl.org/vocab/frbr/core#ResponsibleEntity>))
+Declaration(Class(<http://purl.org/vocab/frbr/core#Subject>))
+Declaration(Class(<http://purl.org/vocab/frbr/core#Work>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#abridgement>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#abridgementOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#adaption>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#adaptionOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#alternate>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#alternateOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#arrangement>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#arrangementOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#complement>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#complementOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#creator>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#creatorOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#embodiment>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#embodimentOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#exemplar>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#exemplarOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#imitation>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#imitationOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#owner>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#ownerOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#part>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#partOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#producer>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#producerOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#realization>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#realizationOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#realizer>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#realizerOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#reconfiguration>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#reconfigurationOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#relatedEndeavour>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#reproduction>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#reproductionOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#responsibleEntity>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#responsibleEntityOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#revision>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#revisionOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#subject>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#subjectOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#successor>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#successorOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#summarization>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#summarizationOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#supplement>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#supplementOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#transformation>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#transformationOf>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#translation>))
+Declaration(ObjectProperty(<http://purl.org/vocab/frbr/core#translationOf>))
+Declaration(ObjectProperty(owl:topObjectProperty))
+Declaration(AnnotationProperty(dc:creator))
+Declaration(AnnotationProperty(dc:date))
+Declaration(AnnotationProperty(dc:description))
+Declaration(AnnotationProperty(dc:rights))
+Declaration(AnnotationProperty(dc:title))
+Declaration(AnnotationProperty(rdfs:comment))
+Declaration(AnnotationProperty(rdfs:isDefinedBy))
+Declaration(AnnotationProperty(rdfs:label))
+Declaration(AnnotationProperty(skos:note))
+############################
+#   Annotation Properties
+############################
+
+# Annotation Property: skos:note (skos:note)
+
+AnnotationAssertion(rdfs:isDefinedBy skos:note <http://www.w3.org/2008/05/skos#>)
+AnnotationAssertion(rdfs:label skos:note "skos:note"@en)
+
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://purl.org/vocab/frbr/core#abridgement> (has abridgement)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#abridgement> "An expression abridged in another one.
+
+In the abridged expression some content of the previous expression is removed, but the result does not alter the content to the extent that it becomes a new work. The expressions resulting from such modification are generally autonomous in nature (i.e., they do not normally require reference to the prior expression in order to be used or understood). "@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#abridgement> "has abridgement"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#abridgement> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#abridgement> <http://purl.org/vocab/frbr/core#abridgementOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#abridgement> <http://purl.org/vocab/frbr/core#Expression>)
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#abridgement> <http://purl.org/vocab/frbr/core#Expression>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#abridgementOf> (is abridgement of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#abridgementOf> "It identifies the entire expression of an abridged one."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#abridgementOf> "is abridgement of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#abridgementOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#adaption> (has adaption)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#adaption> "A work/expression adapted in another one.
+
+This property describe the modification of an original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. If there exists a relation of this kind among two different expressions, they always refer to different works."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#adaption> "has adaption"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#adaption> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#adaption> <http://purl.org/vocab/frbr/core#adaptionOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#adaption> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Work>))
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#adaption> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Work>))
+
+# Object Property: <http://purl.org/vocab/frbr/core#adaptionOf> (is adaption of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#adaptionOf> "It identifies the work/expression of an adapted one."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#adaptionOf> "is adaption of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#adaptionOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#alternate> (has alternate)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#alternate> "A manifestation having another one as alternate.
+
+The alternate relationship involves manifestations that effectively serve as alternates for each other. The alternate relationship obtains, for example, when a publication, sound recording, video, etc. is issued in more than one format or when it is released simultaneously by different publishers in different countries."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#alternate> "has alternate"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#alternate> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#alternate> <http://purl.org/vocab/frbr/core#alternateOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#alternate> <http://purl.org/vocab/frbr/core#Manifestation>)
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#alternate> <http://purl.org/vocab/frbr/core#Manifestation>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#alternateOf> (is alternate of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#alternateOf> "It identifies the manifestation of an alternative one."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#alternateOf> "is alternate of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#alternateOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#arrangement> (has arrangement)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#arrangement> "An expression arranged in another one.
+
+In the arranged expression some content of the previous expression is changed in some way, but the result does not alter the content to the extent that it becomes a new work. The expressions resulting from such modification are generally autonomous in nature (i.e., they do not normally require reference to the prior expression in order to be used or understood)."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#arrangement> "has arrangement"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#arrangement> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#arrangement> <http://purl.org/vocab/frbr/core#arrangementOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#arrangement> <http://purl.org/vocab/frbr/core#Expression>)
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#arrangement> <http://purl.org/vocab/frbr/core#Expression>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#arrangementOf> (is arrangement of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#arrangementOf> "It identifies the original expression of an arranged one."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#arrangementOf> "is arrangement of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#arrangementOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#complement> (has complement)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#complement> "An expression work/expression having another one as complement.
+
+This property describes works that are intended to be combined with or inserted into the related work. In other words, they are intended to be integrated in some way with the other work, but were not part of the original conception of that prior work. If there exists a relation of this kind among two different expressions, then they always refer to different works."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#complement> "has complement"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#complement> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#complement> <http://purl.org/vocab/frbr/core#complementOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#complement> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Work>))
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#complement> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Work>))
+
+# Object Property: <http://purl.org/vocab/frbr/core#complementOf> (is complement of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#complementOf> "It identifies the work/expression of that is a complement of another one."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#complementOf> "is complement of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#complementOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#creator> (has creator)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#creator> "A work linked to its creator."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#creator> "has creator"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#creator> <http://purl.org/vocab/frbr/core#responsibleEntity>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#creator> <http://purl.org/vocab/frbr/core#creatorOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#creator> <http://purl.org/vocab/frbr/core#Work>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#creatorOf> (is creator of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#creatorOf> "The creator of a particular work."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#creatorOf> "is creator of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#creatorOf> <http://purl.org/vocab/frbr/core#responsibleEntityOf>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#embodiment> (has embodiment)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#embodiment> "An expression embodied in a manifestation."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#embodiment> "has embodiment"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#embodiment> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#embodiment> <http://purl.org/vocab/frbr/core#embodimentOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#embodiment> <http://purl.org/vocab/frbr/core#Expression>)
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#embodiment> <http://purl.org/vocab/frbr/core#Manifestation>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#embodimentOf> (is embodiment of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#embodimentOf> "A manifestation that embodies an expression."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#embodimentOf> "is embodiment of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#embodimentOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#exemplar> (has exemplar)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#exemplar> "A manifestation exemplified in an item."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#exemplar> "has exemplar"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#exemplar> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#exemplar> <http://purl.org/vocab/frbr/core#exemplarOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#exemplar> <http://purl.org/vocab/frbr/core#Manifestation>)
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#exemplar> <http://purl.org/vocab/frbr/core#Item>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#exemplarOf> (is exemplar of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#exemplarOf> "An item that exemplifies a manifestation."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#exemplarOf> "is exemplar of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#exemplarOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+FunctionalObjectProperty(<http://purl.org/vocab/frbr/core#exemplarOf>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#imitation> (has imitation)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#imitation> "An work/expression imitated in another one.
+
+This property describes works that are intended to be an imitation another original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. If there exists a relation of this kind among two different expressions, then they always refer to different works."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#imitation> "has imitation"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#imitation> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#imitation> <http://purl.org/vocab/frbr/core#imitationOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#imitation> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Work>))
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#imitation> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Work>))
+
+# Object Property: <http://purl.org/vocab/frbr/core#imitationOf> (is imitation of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#imitationOf> "It identifies the work/expression of an imitated one."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#imitationOf> "is imitation of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#imitationOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#owner> (has owner)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#owner> "An item linked to its owner."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#owner> "has owner"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#owner> <http://purl.org/vocab/frbr/core#responsibleEntity>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#owner> <http://purl.org/vocab/frbr/core#ownerOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#owner> <http://purl.org/vocab/frbr/core#Item>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#ownerOf> (is owner of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#ownerOf> "The owner of a particular item."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#ownerOf> "is owner of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#ownerOf> <http://purl.org/vocab/frbr/core#responsibleEntityOf>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#part> (has part)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#part> "A part of an endeavour."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#part> "has part"@en)
+AnnotationAssertion(skos:note <http://purl.org/vocab/frbr/core#part> "Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive."@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#part> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#part> <http://purl.org/vocab/frbr/core#partOf>)
+TransitiveObjectProperty(<http://purl.org/vocab/frbr/core#part>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#partOf> (is part of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#partOf> "An endeavour incorporating another endeavour."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#partOf> "is part of"@en)
+AnnotationAssertion(skos:note <http://purl.org/vocab/frbr/core#partOf> "Unlike the FRBR version in RDF http://vocab.org/frbr/core.html the present version defines partonomy relationships transitive."@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#partOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+TransitiveObjectProperty(<http://purl.org/vocab/frbr/core#partOf>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#producer> (has producer)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#producer> "A manifestation linked to its prodecer."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#producer> "has producer"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#producer> <http://purl.org/vocab/frbr/core#responsibleEntity>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#producer> <http://purl.org/vocab/frbr/core#producerOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#producer> <http://purl.org/vocab/frbr/core#Manifestation>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#producerOf> (is producer of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#producerOf> "The producer of a particular manifestation."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#producerOf> "is producer of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#producerOf> <http://purl.org/vocab/frbr/core#responsibleEntityOf>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#realization> (has realization)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#realization> "A work realized through an expression."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#realization> "has realization"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#realization> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#realization> <http://purl.org/vocab/frbr/core#realizationOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#realization> <http://purl.org/vocab/frbr/core#Work>)
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#realization> <http://purl.org/vocab/frbr/core#Expression>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#realizationOf> (is realization of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#realizationOf> "An expression that realizes a work."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#realizationOf> "is realization of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#realizationOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+FunctionalObjectProperty(<http://purl.org/vocab/frbr/core#realizationOf>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#realizer> (has realizer)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#realizer> "An expression linked to its realizer."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#realizer> "has realizer"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#realizer> <http://purl.org/vocab/frbr/core#responsibleEntity>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#realizer> <http://purl.org/vocab/frbr/core#realizerOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#realizer> <http://purl.org/vocab/frbr/core#Expression>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#realizerOf> (is realizer of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#realizerOf> "The realizer of a particular expression."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#realizerOf> "is realizer of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#realizerOf> <http://purl.org/vocab/frbr/core#responsibleEntityOf>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#reconfiguration> (has reconfiguration)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#reconfiguration> "An item reconfigured in another one.
+
+The reconfiguration relationship is one in which one or more items are changed in such a way that a new item or items result. Most commonly, an item of one manifestation is bound with an item of a different manifestation to make a new item. "@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#reconfiguration> "has reconfiguration"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#reconfiguration> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#reconfiguration> <http://purl.org/vocab/frbr/core#reconfigurationOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#reconfiguration> <http://purl.org/vocab/frbr/core#Item>)
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#reconfiguration> <http://purl.org/vocab/frbr/core#Item>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#reconfigurationOf> (is reconfiguration of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#reconfigurationOf> "It identifies the manifestation of a reconfigured one."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#reconfigurationOf> "is reconfiguration of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#reconfigurationOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#relatedEndeavour> (has related endeavour)
+
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#relatedEndeavour> "has related endeavour"@en)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#relatedEndeavour> <http://purl.org/vocab/frbr/core#Endeavour>)
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#relatedEndeavour> <http://purl.org/vocab/frbr/core#Endeavour>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#reproduction> (has reproduction)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#reproduction> "A manifestation/item reproduced in another one.
+
+A reproduction indicates the relationship as it would be drawn from the first manifestation/item in the relationship to the second manifestation/item in the relationship."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#reproduction> "has reproduction"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#reproduction> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#reproduction> <http://purl.org/vocab/frbr/core#reproductionOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#reproduction> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Item> <http://purl.org/vocab/frbr/core#Manifestation>))
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#reproduction> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Item> <http://purl.org/vocab/frbr/core#Manifestation>))
+
+# Object Property: <http://purl.org/vocab/frbr/core#reproductionOf> (is reproduction of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#reproductionOf> "It identifies the manifestation/item of a reproduced one."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#reproductionOf> "is reproduction of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#reproductionOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#responsibleEntity> (has responsible entity)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#responsibleEntity> "Any endeavour having a particular entity that is responsible of it."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#responsibleEntity> "has responsible entity"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#responsibleEntity> owl:topObjectProperty)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#responsibleEntity> <http://purl.org/vocab/frbr/core#responsibleEntityOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#responsibleEntity> <http://purl.org/vocab/frbr/core#Endeavour>)
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#responsibleEntity> <http://purl.org/vocab/frbr/core#ResponsibleEntity>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#responsibleEntityOf> (is responsible entity of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#responsibleEntityOf> "An entity that is resposible for a particular endeavour."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#responsibleEntityOf> "is responsible entity of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#responsibleEntityOf> owl:topObjectProperty)
+
+# Object Property: <http://purl.org/vocab/frbr/core#revision> (has revision)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#revision> "An expression revised in another one.
+
+A revision has the intent to alter or update the content of the prior expression, but without changing the content so much that it becomes a new work."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#revision> "has revision"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#revision> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#revision> <http://purl.org/vocab/frbr/core#revisionOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#revision> <http://purl.org/vocab/frbr/core#Expression>)
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#revision> <http://purl.org/vocab/frbr/core#Expression>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#revisionOf> (is revision of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#revisionOf> "It identifies the previous expression of a revised one."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#revisionOf> "is revision of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#revisionOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#subject> (has subject)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#subject> "A work linked to a particular subject it is talking about."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#subject> "has subject"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#subject> owl:topObjectProperty)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#subject> <http://purl.org/vocab/frbr/core#subjectOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#subject> <http://purl.org/vocab/frbr/core#Work>)
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#subject> ObjectUnionOf(<http://purl.org/vocab/frbr/core#CorporateBody> <http://purl.org/vocab/frbr/core#Endeavour> <http://purl.org/vocab/frbr/core#Subject>))
+
+# Object Property: <http://purl.org/vocab/frbr/core#subjectOf> (is subject of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#subjectOf> "A subject a work talks abbout."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#subjectOf> "is subject of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#subjectOf> owl:topObjectProperty)
+
+# Object Property: <http://purl.org/vocab/frbr/core#successor> (has successor)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#successor> "An expression work/expression having another one as successor.
+
+The successor type of relationship involves a kind of linear progression of content from one work/expression to the other. In some cases, the content of the successor may be closely connected to the content of the preceding work, which would result in a work that is referential. In others, such as with loosely connected parts of a trilogy, the successor will be autonomous. Serial publications that result from the merger or split of their predecessors and stand on their own without requiring reference to the predecessor are also examples of autonomous works that fall within the successor relationship type. If there exists a relation of this kind among two different expressions, then they always refer to different works."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#successor> "has successor"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#successor> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#successor> <http://purl.org/vocab/frbr/core#successorOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#successor> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Work>))
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#successor> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Work>))
+
+# Object Property: <http://purl.org/vocab/frbr/core#successorOf> (is successor of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#successorOf> "It identifies the previous work/expression of a succeeded one."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#successorOf> "is successor of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#successorOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#summarization> (has summarization)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#summarization> "A work/expression summarized in another one.
+
+This property describe the summarization of an original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. If there exists a relation of this kind among two different expressions, they always refer to different works."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#summarization> "has summarization"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#summarization> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#summarization> <http://purl.org/vocab/frbr/core#summarizationOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#summarization> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Work>))
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#summarization> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Work>))
+
+# Object Property: <http://purl.org/vocab/frbr/core#summarizationOf> (is summarization of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#summarizationOf> "It identifies the original work/expression of a summarized one."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#summarizationOf> "is summarization of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#summarizationOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#supplement> (has supplement)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#supplement> "An expression work/expression having another one as supplement.
+
+The supplement relationship type involves works/expressions that are intended to be used in conjunction with another work/expression. Some of these, such as indices, concordances, teachers' guides, glosses, and instruction manuals for electronic resources will be so closely associated with the content of the related work/expression that they are useless without the other work/expression."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#supplement> "has supplement"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#supplement> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#supplement> <http://purl.org/vocab/frbr/core#supplementOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#supplement> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Work>))
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#supplement> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Work>))
+
+# Object Property: <http://purl.org/vocab/frbr/core#supplementOf> (is supplement of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#supplementOf> "It identifies the work/expression of a particular supplement of it."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#supplementOf> "is supplement of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#supplementOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#transformation> (has transformation)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#transformation> "An work/expression transformed in another one.
+
+This property describes works that are intended to be a trasformation another original work that is sufficient in degree to warrant their being considered as new works, rather than simply different expressions of the same work. If there exists a relation of this kind among two different expressions, then they always refer to different works."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#transformation> "has transformation"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#transformation> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#transformation> <http://purl.org/vocab/frbr/core#transformationOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#transformation> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Work>))
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#transformation> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Work>))
+
+# Object Property: <http://purl.org/vocab/frbr/core#transformationOf> (is transformation of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#transformationOf> "It identifies the original work/expression of a trasformed one."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#transformationOf> "is transformation of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#transformationOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#translation> (has translation)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#translation> "An expression translated in another one.
+
+It allows to refer to a literal translation, in which the intent is to render the intellectual content of the previous expression as accurately as possible."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#translation> "has translation"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#translation> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+InverseObjectProperties(<http://purl.org/vocab/frbr/core#translation> <http://purl.org/vocab/frbr/core#translationOf>)
+ObjectPropertyDomain(<http://purl.org/vocab/frbr/core#translation> <http://purl.org/vocab/frbr/core#Expression>)
+ObjectPropertyRange(<http://purl.org/vocab/frbr/core#translation> <http://purl.org/vocab/frbr/core#Expression>)
+
+# Object Property: <http://purl.org/vocab/frbr/core#translationOf> (is translation of)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#translationOf> "It identifies the original expression of a translated one."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#translationOf> "is translation of"@en)
+SubObjectPropertyOf(<http://purl.org/vocab/frbr/core#translationOf> <http://purl.org/vocab/frbr/core#relatedEndeavour>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://purl.org/vocab/frbr/core#Concept> (concept)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#Concept> "An abstract notion or idea.
+
+The entity defined as concept encompasses a comprehensive range of abstractions that may be the subject of a work: fields of knowledge, disciplines, schools of thought (philosophies, religions, political ideologies, etc.), theories, processes, techniques, practices, etc.  A concept may be broad in nature or narrowly defined and precise. "@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#Concept> "concept"@en)
+SubClassOf(<http://purl.org/vocab/frbr/core#Concept> <http://purl.org/vocab/frbr/core#Subject>)
+
+# Class: <http://purl.org/vocab/frbr/core#CorporateBody> (corporate body)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#CorporateBody> "An organization or group of individuals and/or organizations acting as a unit.
+
+The entity defined as corporate body encompasses organizations and groups of individuals and/or organizations that are identified by a particular name, including occasional groups and groups that are constituted as meetings, conferences, congresses, expeditions, exhibitions, festivals, fairs, etc."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#CorporateBody> "corporate body"@en)
+SubClassOf(<http://purl.org/vocab/frbr/core#CorporateBody> <http://purl.org/vocab/frbr/core#ResponsibleEntity>)
+DisjointClasses(<http://purl.org/vocab/frbr/core#CorporateBody> <http://purl.org/vocab/frbr/core#Person>)
+
+# Class: <http://purl.org/vocab/frbr/core#Endeavour> (endeavour)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#Endeavour> "It describes different aspects of user interests in the products of intellectual or artistic artifact."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#Endeavour> "endeavour"@en)
+EquivalentClasses(<http://purl.org/vocab/frbr/core#Endeavour> ObjectUnionOf(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Item> <http://purl.org/vocab/frbr/core#Manifestation> <http://purl.org/vocab/frbr/core#Work>))
+
+# Class: <http://purl.org/vocab/frbr/core#Event> (event)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#Event> "An action or occurrence.
+
+The entity defined as event encompasses a comprehensive range of actions and occurrences that may be the subject of a work: historical events, epochs, periods of time, etc. "@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#Event> "event"@en)
+SubClassOf(<http://purl.org/vocab/frbr/core#Event> <http://purl.org/vocab/frbr/core#Subject>)
+
+# Class: <http://purl.org/vocab/frbr/core#Expression> (expression)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#Expression> "The intellectual or artistic realization of a work in the form of alpha-numeric, musical, or choreographic notation, sound, image, object, movement, etc., or any combination of such forms.
+
+An expression is the specific intellectual or artistic form that a work takes each time it is \"realized.\" Expression encompasses, for example, the specific words, sentences, paragraphs, etc. that result from the realization of a work in the form of a text, or the particular sounds, phrasing, etc. resulting from the realization of a musical work."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#Expression> "expression"@en)
+EquivalentClasses(<http://purl.org/vocab/frbr/core#Expression> ObjectIntersectionOf(<http://purl.org/vocab/frbr/core#Endeavour> ObjectSomeValuesFrom(<http://purl.org/vocab/frbr/core#embodiment> <http://purl.org/vocab/frbr/core#Manifestation>) ObjectSomeValuesFrom(<http://purl.org/vocab/frbr/core#realizationOf> <http://purl.org/vocab/frbr/core#Work>)))
+EquivalentClasses(<http://purl.org/vocab/frbr/core#Expression> ObjectIntersectionOf(<http://purl.org/vocab/frbr/core#Endeavour> ObjectAllValuesFrom(<http://purl.org/vocab/frbr/core#part> <http://purl.org/vocab/frbr/core#Expression>) ObjectAllValuesFrom(<http://purl.org/vocab/frbr/core#partOf> <http://purl.org/vocab/frbr/core#Expression>)))
+DisjointClasses(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Item>)
+DisjointClasses(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Manifestation>)
+DisjointClasses(<http://purl.org/vocab/frbr/core#Expression> <http://purl.org/vocab/frbr/core#Work>)
+
+# Class: <http://purl.org/vocab/frbr/core#Item> (item)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#Item> "A single exemplar of a manifestation.
+
+The entity defined as item is a concrete entity. It is in many instances a single physical object (e.g., a copy of a one-volume monograph, a single audio cassette, etc.). There are instances, however, where the entity defined as item comprises more than one physical object (e.g., a monograph issued as two separately bound volumes, a recording issued on three separate compact discs, etc.). "@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#Item> "item"@en)
+EquivalentClasses(<http://purl.org/vocab/frbr/core#Item> ObjectIntersectionOf(<http://purl.org/vocab/frbr/core#Endeavour> ObjectSomeValuesFrom(<http://purl.org/vocab/frbr/core#exemplarOf> <http://purl.org/vocab/frbr/core#Manifestation>)))
+EquivalentClasses(<http://purl.org/vocab/frbr/core#Item> ObjectIntersectionOf(<http://purl.org/vocab/frbr/core#Endeavour> ObjectAllValuesFrom(<http://purl.org/vocab/frbr/core#part> <http://purl.org/vocab/frbr/core#Item>) ObjectAllValuesFrom(<http://purl.org/vocab/frbr/core#partOf> <http://purl.org/vocab/frbr/core#Item>)))
+DisjointClasses(<http://purl.org/vocab/frbr/core#Item> <http://purl.org/vocab/frbr/core#Manifestation>)
+DisjointClasses(<http://purl.org/vocab/frbr/core#Item> <http://purl.org/vocab/frbr/core#Work>)
+
+# Class: <http://purl.org/vocab/frbr/core#Manifestation> (manifestation)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#Manifestation> "The physical embodiment of an expression of a work.
+
+The entity defined as manifestation encompasses a wide range of materials and formats. As an entity, manifestation represents all the physical objects that bear the same characteristics, in respect to both intellectual content and physical form. "@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#Manifestation> "manifestation"@en)
+EquivalentClasses(<http://purl.org/vocab/frbr/core#Manifestation> ObjectIntersectionOf(<http://purl.org/vocab/frbr/core#Endeavour> ObjectSomeValuesFrom(<http://purl.org/vocab/frbr/core#embodimentOf> <http://purl.org/vocab/frbr/core#Expression>) ObjectSomeValuesFrom(<http://purl.org/vocab/frbr/core#exemplar> <http://purl.org/vocab/frbr/core#Item>)))
+EquivalentClasses(<http://purl.org/vocab/frbr/core#Manifestation> ObjectIntersectionOf(<http://purl.org/vocab/frbr/core#Endeavour> ObjectAllValuesFrom(<http://purl.org/vocab/frbr/core#part> <http://purl.org/vocab/frbr/core#Manifestation>) ObjectAllValuesFrom(<http://purl.org/vocab/frbr/core#partOf> <http://purl.org/vocab/frbr/core#Manifestation>)))
+DisjointClasses(<http://purl.org/vocab/frbr/core#Manifestation> <http://purl.org/vocab/frbr/core#Work>)
+
+# Class: <http://purl.org/vocab/frbr/core#Object> (object)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#Object> "A material thing.
+
+The entity defined as object encompasses a comprehensive range of material things that may be the subject of a work: animate and inanimate objects occurring in nature; fixed, movable, and moving objects that are the product of human creation; objects that no longer exist. "@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#Object> "object"@en)
+SubClassOf(<http://purl.org/vocab/frbr/core#Object> <http://purl.org/vocab/frbr/core#Subject>)
+
+# Class: <http://purl.org/vocab/frbr/core#Person> (person)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#Person> "An individual. The entity defined as person encompasses individuals that are deceased as well as those that are living."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#Person> "person"@en)
+SubClassOf(<http://purl.org/vocab/frbr/core#Person> <http://purl.org/vocab/frbr/core#ResponsibleEntity>)
+
+# Class: <http://purl.org/vocab/frbr/core#Place> (place)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#Place> "A location.
+
+The entity defined as place encompasses a comprehensive range of locations: terrestrial and extra-terrestrial; historical and contemporary; geographic features and geo-political jurisdictions. "@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#Place> "place"@en)
+SubClassOf(<http://purl.org/vocab/frbr/core#Place> <http://purl.org/vocab/frbr/core#Subject>)
+
+# Class: <http://purl.org/vocab/frbr/core#ResponsibleEntity> (responsible entity)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#ResponsibleEntity> "It represents those responsible for the intellectual or artistic content, the physical production and dissemination, or the custodianship of any endeavour."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#ResponsibleEntity> "responsible entity"@en)
+
+# Class: <http://purl.org/vocab/frbr/core#Subject> (subject)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#Subject> "It represents an additional set of entities that serve as the subjects of works."@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#Subject> "subject"@en)
+
+# Class: <http://purl.org/vocab/frbr/core#Work> (work)
+
+AnnotationAssertion(rdfs:comment <http://purl.org/vocab/frbr/core#Work> "A distinct intellectual or artistic creation.
+
+A work is an abstract entity; there is no single material object one can point to as the work. We recognize the work through individual realizations or expressions of the work, but the work itself exists only in the commonality of content between and among the various expressions of the work. When we speak of Homer's Iliad as a work, our point of reference is not a particular recitation or text of the work, but the intellectual creation that lies behind all the various expressions of the work. "@en)
+AnnotationAssertion(rdfs:label <http://purl.org/vocab/frbr/core#Work> "work"@en)
+EquivalentClasses(<http://purl.org/vocab/frbr/core#Work> ObjectIntersectionOf(<http://purl.org/vocab/frbr/core#Endeavour> ObjectSomeValuesFrom(<http://purl.org/vocab/frbr/core#realization> <http://purl.org/vocab/frbr/core#Expression>)))
+EquivalentClasses(<http://purl.org/vocab/frbr/core#Work> ObjectIntersectionOf(<http://purl.org/vocab/frbr/core#Endeavour> ObjectAllValuesFrom(<http://purl.org/vocab/frbr/core#part> <http://purl.org/vocab/frbr/core#Work>) ObjectAllValuesFrom(<http://purl.org/vocab/frbr/core#partOf> <http://purl.org/vocab/frbr/core#Work>)))
+
+
+DisjointClasses(<http://purl.org/vocab/frbr/core#Concept> <http://purl.org/vocab/frbr/core#Event> <http://purl.org/vocab/frbr/core#Object> <http://purl.org/vocab/frbr/core#Place>)
+DLSafeRule(Body(ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#abridgement> Variable(<urn:swrl#e1>) Variable(<urn:swrl#e2>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e1>) Variable(<urn:swrl#w1>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e2>) Variable(<urn:swrl#w2>)))Head(SameIndividualAtom(Variable(<urn:swrl#w1>) Variable(<urn:swrl#w2>))))
+DLSafeRule(Body(ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#adaption> Variable(<urn:swrl#e1>) Variable(<urn:swrl#e2>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e1>) Variable(<urn:swrl#w1>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e2>) Variable(<urn:swrl#w2>)))Head(DifferentIndividualsAtom(Variable(<urn:swrl#w1>) Variable(<urn:swrl#w2>))))
+DLSafeRule(Body(ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#arrangement> Variable(<urn:swrl#e1>) Variable(<urn:swrl#e2>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e1>) Variable(<urn:swrl#w1>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e2>) Variable(<urn:swrl#w2>)))Head(SameIndividualAtom(Variable(<urn:swrl#w1>) Variable(<urn:swrl#w2>))))
+DLSafeRule(Body(ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#complement> Variable(<urn:swrl#e1>) Variable(<urn:swrl#e2>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e1>) Variable(<urn:swrl#w1>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e2>) Variable(<urn:swrl#w2>)))Head(DifferentIndividualsAtom(Variable(<urn:swrl#w1>) Variable(<urn:swrl#w2>))))
+DLSafeRule(Body(ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#imitation> Variable(<urn:swrl#e1>) Variable(<urn:swrl#e2>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e1>) Variable(<urn:swrl#w1>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e2>) Variable(<urn:swrl#w2>)))Head(DifferentIndividualsAtom(Variable(<urn:swrl#w1>) Variable(<urn:swrl#w2>))))
+DLSafeRule(Body(ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e1>) Variable(<urn:swrl#w1>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e2>) Variable(<urn:swrl#w2>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#revision> Variable(<urn:swrl#e1>) Variable(<urn:swrl#e2>)))Head(SameIndividualAtom(Variable(<urn:swrl#w1>) Variable(<urn:swrl#w2>))))
+DLSafeRule(Body(ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e1>) Variable(<urn:swrl#w1>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e2>) Variable(<urn:swrl#w2>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#successor> Variable(<urn:swrl#e1>) Variable(<urn:swrl#e2>)))Head(DifferentIndividualsAtom(Variable(<urn:swrl#w1>) Variable(<urn:swrl#w2>))))
+DLSafeRule(Body(ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e1>) Variable(<urn:swrl#w1>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e2>) Variable(<urn:swrl#w2>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#summarization> Variable(<urn:swrl#e1>) Variable(<urn:swrl#e2>)))Head(DifferentIndividualsAtom(Variable(<urn:swrl#w1>) Variable(<urn:swrl#w2>))))
+DLSafeRule(Body(ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e1>) Variable(<urn:swrl#w1>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e2>) Variable(<urn:swrl#w2>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#supplement> Variable(<urn:swrl#e1>) Variable(<urn:swrl#e2>)))Head(DifferentIndividualsAtom(Variable(<urn:swrl#w1>) Variable(<urn:swrl#w2>))))
+DLSafeRule(Body(ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e1>) Variable(<urn:swrl#w1>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e2>) Variable(<urn:swrl#w2>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#transformation> Variable(<urn:swrl#e1>) Variable(<urn:swrl#e2>)))Head(DifferentIndividualsAtom(Variable(<urn:swrl#w1>) Variable(<urn:swrl#w2>))))
+DLSafeRule(Body(ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e1>) Variable(<urn:swrl#w1>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#realizationOf> Variable(<urn:swrl#e2>) Variable(<urn:swrl#w2>)) ObjectPropertyAtom(<http://purl.org/vocab/frbr/core#translation> Variable(<urn:swrl#e1>) Variable(<urn:swrl#e2>)))Head(SameIndividualAtom(Variable(<urn:swrl#w1>) Variable(<urn:swrl#w2>))))
+AnnotationAssertion(rdfs:comment <http://purl.org/spar/frbr> "FRBR DL is an OWL 2 DL expression of the FRBR model.")
+)
