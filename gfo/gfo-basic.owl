@@ -1,0 +1,2249 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.onto-med.de/ontologies/gfo-basic.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.onto-med.de/ontologies/gfo-basic.owl">
+    <Prefix name="" IRI="http://www.onto-med.de/ontologies/gfo-basic.owl#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="gfo" IRI="http://www.onto-med.de/ontologies/gfo.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl2" IRI="http://www.w3.org/2006/12/owl2#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="owl2xml" IRI="http://www.w3.org/2006/12/owl2-xml#"/>
+    <Prefix name="gfo-basic" IRI="http://www.onto-med.de/ontologies/gfo-basic.owl#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:rights"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Copyright (c) 2006-2008, Regents of the Research Group Ontologies in Medicine (Onto-Med), University of Leipzig, Germany.
+       All rights reserved.  
+
+       Redistribution and use in source and binary forms, with or without modification,
+       are permitted provided that the following conditions are met:
+       
+       1. Redistributions of source code must retain the above copyright notice, this list
+          of conditions and the following disclaimer.
+       
+       2. Redistributions in binary form must reproduce the above copyright notice, this list
+          of conditions and the following disclaimer in the documentation and/or other
+          materials provided with the distribution.
+          
+       3. Neither the name of the Research Group Ontologies in Medicine (Onto-Med), University
+          of Leipzig nor the names of its contributors may be used to endorse or promote products
+          derived from this software without specific prior written permission.
+
+       THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS
+       OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+       AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+       CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+       DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+       DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+       IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+       OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Version 1.0 ($Revision: 1.13 $)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This file belongs to the OWL distribution of GFO, cf. http://www.onto-med.de/ontologies/gfo.
+-----------------
+
+It comprises a set of selected major and rather stable GFO categories, with the intention to serve as a comprehensible starting point which
+
+1. should be useful for immediate modeling purposes,
+2. covers GFO&apos;s areas and exhibits outstanding GFO features
+3. omits categories of more theoretical character or those which are easily definable
+
+Categories of the third kind will be provided in separate extensions.
+
+-----------------
+
+In some comments, references to documents are used. These refer to several versions of the following report:
+
+Herre, H.; Heller, B.; Burek, P.; Hoehndorf, R.; Loebe, F. &amp; Michalek, H.. General Formal Ontology (GFO): A Foundational Ontology Integrating Objects and Processes. Part I: Basic Principles. Research Group Ontologies in Medicine (Onto-Med), University of Leipzig.
+
+[herre-h-2006--a]: Version 1.0, Onto-Med Report Nr. 8, 01.07.2006
+[part1-v1.0.1] Version 1.0.1., Draft, 14.02.2007</Literal>
+    </Annotation>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:has_proper_part"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Universal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:played_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:temporal_part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:projection_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:exhibits"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:spatial_boundary_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:has_right_time_boundary"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:rights"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:abstract_has_part"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:contributor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:has_property"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Concrete"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:right_boundary_of"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Abstract"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Left_time_boundary"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Process"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:necessary_for"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Line"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Right_time_boundary"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Individual"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Time_boundary"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Occurrent"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Spatial_region"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:projects_to"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:plays_role"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Concept"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:instance_of"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Spatial_boundary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:token_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:has_spatial_boundary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:instantiated_by"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Material_object"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Temporal_region"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:frames"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:role_of"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Surface"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:History"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:proper_part_of"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Continuous_change"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Chronoid"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Discrete_process"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:has_time_boundary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:has_participant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Amount_of_substrate"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Event"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Category"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:coincides_with"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Topoid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:has_left_time_boundary"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Presential"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:has_boundary"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Time"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Social_role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:occupies"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Continuous_process"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:left_boundary_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:has_temporal_part"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Perpetuant"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Property"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Space_time"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Processual_Structure"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:framed_by"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:boundary_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:time_boundary_of"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Symbol_structure"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Space"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:depends_on"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Processual_role"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Relational_role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:has_token"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:abstract_part_of"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Relator"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:has_part"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:participates_in"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:occupied_by"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Material_boundary"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Point"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:State"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:has_role"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:property_of"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Change"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="gfo:Discrete_change"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:part_of"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="gfo:exists_at"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="gfo:Entity"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="gfo:Left_time_boundary"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gfo:Time_boundary"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="gfo:left_boundary_of"/>
+                <Class abbreviatedIRI="gfo:Chronoid"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="gfo:Line"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gfo:spatial_boundary_of"/>
+            <Class abbreviatedIRI="gfo:Surface"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="gfo:Point"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gfo:spatial_boundary_of"/>
+            <Class abbreviatedIRI="gfo:Line"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="gfo:Right_time_boundary"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gfo:Time_boundary"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="gfo:right_boundary_of"/>
+                <Class abbreviatedIRI="gfo:Chronoid"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="gfo:Spatial_boundary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gfo:spatial_boundary_of"/>
+            <Class abbreviatedIRI="gfo:Space"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="gfo:Surface"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gfo:spatial_boundary_of"/>
+            <Class abbreviatedIRI="gfo:Topoid"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="gfo:Time_boundary"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="gfo:Left_time_boundary"/>
+            <Class abbreviatedIRI="gfo:Right_time_boundary"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class abbreviatedIRI="gfo:Time_boundary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gfo:time_boundary_of"/>
+            <Class abbreviatedIRI="gfo:Temporal_region"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Abstract"/>
+        <Class abbreviatedIRI="gfo:Individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Amount_of_substrate"/>
+        <Class abbreviatedIRI="gfo:Presential"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Change"/>
+        <Class abbreviatedIRI="gfo:Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Chronoid"/>
+        <Class abbreviatedIRI="gfo:Temporal_region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Chronoid"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gfo:has_left_time_boundary"/>
+            <Class abbreviatedIRI="gfo:Entity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Chronoid"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI="gfo:has_right_time_boundary"/>
+            <Class abbreviatedIRI="gfo:Entity"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Concept"/>
+        <Class abbreviatedIRI="gfo:Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Concrete"/>
+        <Class abbreviatedIRI="gfo:Individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Continuous_change"/>
+        <Class abbreviatedIRI="gfo:Change"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Continuous_process"/>
+        <Class abbreviatedIRI="gfo:Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Discrete_change"/>
+        <Class abbreviatedIRI="gfo:Change"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Discrete_process"/>
+        <Class abbreviatedIRI="gfo:Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Event"/>
+        <Class abbreviatedIRI="gfo:Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:History"/>
+        <Class abbreviatedIRI="gfo:Occurrent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Left_time_boundary"/>
+        <Class abbreviatedIRI="gfo:Time_boundary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Line"/>
+        <Class abbreviatedIRI="gfo:Spatial_boundary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Material_boundary"/>
+        <Class abbreviatedIRI="gfo:Presential"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Material_boundary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gfo:depends_on"/>
+            <Class abbreviatedIRI="gfo:Material_object"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Material_boundary"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gfo:framed_by"/>
+            <Class abbreviatedIRI="gfo:Spatial_boundary"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Material_object"/>
+        <Class abbreviatedIRI="gfo:Presential"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Material_object"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gfo:framed_by"/>
+            <Class abbreviatedIRI="gfo:Topoid"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Occurrent"/>
+        <Class abbreviatedIRI="gfo:Processual_Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Perpetuant"/>
+        <Class abbreviatedIRI="gfo:Concrete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Point"/>
+        <Class abbreviatedIRI="gfo:Spatial_boundary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Presential"/>
+        <Class abbreviatedIRI="gfo:Concrete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Presential"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gfo:exists_at"/>
+            <Class abbreviatedIRI="gfo:Time_boundary"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Process"/>
+        <Class abbreviatedIRI="gfo:Processual_Structure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gfo:projects_to"/>
+            <Class abbreviatedIRI="gfo:Temporal_region"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Processual_Structure"/>
+        <Class abbreviatedIRI="gfo:Concrete"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Processual_role"/>
+        <Class abbreviatedIRI="gfo:Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Processual_role"/>
+        <Class abbreviatedIRI="gfo:Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Processual_role"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gfo:role_of"/>
+            <Class abbreviatedIRI="gfo:Process"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Property"/>
+        <Class abbreviatedIRI="gfo:Individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Relational_role"/>
+        <Class abbreviatedIRI="gfo:Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Relational_role"/>
+        <Class abbreviatedIRI="gfo:Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Relational_role"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gfo:played_by"/>
+            <Class abbreviatedIRI="gfo:Entity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Relational_role"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="gfo:role_of"/>
+            <Class abbreviatedIRI="gfo:Relator"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Relator"/>
+        <Class abbreviatedIRI="gfo:Individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Right_time_boundary"/>
+        <Class abbreviatedIRI="gfo:Time_boundary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Role"/>
+        <Class abbreviatedIRI="gfo:Individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Social_role"/>
+        <Class abbreviatedIRI="gfo:Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Space"/>
+        <Class abbreviatedIRI="gfo:Space_time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Space_time"/>
+        <Class abbreviatedIRI="gfo:Individual"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Spatial_boundary"/>
+        <Class abbreviatedIRI="gfo:Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Spatial_region"/>
+        <Class abbreviatedIRI="gfo:Space"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:State"/>
+        <Class abbreviatedIRI="gfo:Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Surface"/>
+        <Class abbreviatedIRI="gfo:Spatial_boundary"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Symbol_structure"/>
+        <Class abbreviatedIRI="gfo:Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Temporal_region"/>
+        <Class abbreviatedIRI="gfo:Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Time"/>
+        <Class abbreviatedIRI="gfo:Space_time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Time_boundary"/>
+        <Class abbreviatedIRI="gfo:Time"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Topoid"/>
+        <Class abbreviatedIRI="gfo:Spatial_region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="gfo:Universal"/>
+        <Class abbreviatedIRI="gfo:Category"/>
+    </SubClassOf>
+    <SubClassOf>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gfo:Property"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty abbreviatedIRI="gfo:property_of"/>
+                <Class abbreviatedIRI="gfo:Presential"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+        <Class abbreviatedIRI="gfo:Presential"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Abstract"/>
+        <Class abbreviatedIRI="gfo:Concrete"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Abstract"/>
+        <Class abbreviatedIRI="gfo:Space_time"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Category"/>
+        <Class abbreviatedIRI="gfo:Individual"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Change"/>
+        <Class abbreviatedIRI="gfo:Event"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Change"/>
+        <Class abbreviatedIRI="gfo:History"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Concept"/>
+        <Class abbreviatedIRI="gfo:Symbol_structure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Concept"/>
+        <Class abbreviatedIRI="gfo:Universal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Concrete"/>
+        <Class abbreviatedIRI="gfo:Space_time"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Continuous_change"/>
+        <Class abbreviatedIRI="gfo:Discrete_change"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Event"/>
+        <Class abbreviatedIRI="gfo:History"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Left_time_boundary"/>
+        <Class abbreviatedIRI="gfo:Right_time_boundary"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Material_boundary"/>
+        <Class abbreviatedIRI="gfo:Material_object"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Occurrent"/>
+        <Class abbreviatedIRI="gfo:Process"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Presential"/>
+        <Class abbreviatedIRI="gfo:Processual_Structure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Processual_role"/>
+        <Class abbreviatedIRI="gfo:Relational_role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Processual_role"/>
+        <Class abbreviatedIRI="gfo:Social_role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Property"/>
+        <Class abbreviatedIRI="gfo:Relator"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Relational_role"/>
+        <Class abbreviatedIRI="gfo:Social_role"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Space"/>
+        <Class abbreviatedIRI="gfo:Time"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Spatial_boundary"/>
+        <Class abbreviatedIRI="gfo:Spatial_region"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Symbol_structure"/>
+        <Class abbreviatedIRI="gfo:Universal"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class abbreviatedIRI="gfo:Temporal_region"/>
+        <Class abbreviatedIRI="gfo:Time_boundary"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:boundary_of"/>
+        <ObjectProperty abbreviatedIRI="gfo:depends_on"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:has_boundary"/>
+        <ObjectProperty abbreviatedIRI="gfo:necessary_for"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:has_left_time_boundary"/>
+        <ObjectProperty abbreviatedIRI="gfo:has_time_boundary"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:has_part"/>
+        <ObjectProperty abbreviatedIRI="gfo:abstract_has_part"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:has_proper_part"/>
+        <ObjectProperty abbreviatedIRI="gfo:has_part"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:has_right_time_boundary"/>
+        <ObjectProperty abbreviatedIRI="gfo:has_time_boundary"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:has_role"/>
+        <ObjectProperty abbreviatedIRI="gfo:abstract_has_part"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:has_spatial_boundary"/>
+        <ObjectProperty abbreviatedIRI="gfo:has_boundary"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:has_temporal_part"/>
+        <ObjectProperty abbreviatedIRI="gfo:has_part"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:has_time_boundary"/>
+        <ObjectProperty abbreviatedIRI="gfo:has_boundary"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:has_token"/>
+        <ObjectProperty abbreviatedIRI="gfo:instantiated_by"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:left_boundary_of"/>
+        <ObjectProperty abbreviatedIRI="gfo:time_boundary_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:occupied_by"/>
+        <ObjectProperty abbreviatedIRI="gfo:frames"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:occupies"/>
+        <ObjectProperty abbreviatedIRI="gfo:framed_by"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:part_of"/>
+        <ObjectProperty abbreviatedIRI="gfo:abstract_part_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:proper_part_of"/>
+        <ObjectProperty abbreviatedIRI="gfo:part_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:right_boundary_of"/>
+        <ObjectProperty abbreviatedIRI="gfo:time_boundary_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:role_of"/>
+        <ObjectProperty abbreviatedIRI="gfo:abstract_part_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:spatial_boundary_of"/>
+        <ObjectProperty abbreviatedIRI="gfo:boundary_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:temporal_part_of"/>
+        <ObjectProperty abbreviatedIRI="gfo:part_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:time_boundary_of"/>
+        <ObjectProperty abbreviatedIRI="gfo:boundary_of"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty abbreviatedIRI="gfo:token_of"/>
+        <ObjectProperty abbreviatedIRI="gfo:instance_of"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:abstract_has_part"/>
+        <ObjectProperty abbreviatedIRI="gfo:abstract_part_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:boundary_of"/>
+        <ObjectProperty abbreviatedIRI="gfo:has_boundary"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:depends_on"/>
+        <ObjectProperty abbreviatedIRI="gfo:necessary_for"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:framed_by"/>
+        <ObjectProperty abbreviatedIRI="gfo:frames"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:has_left_time_boundary"/>
+        <ObjectProperty abbreviatedIRI="gfo:left_boundary_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:has_part"/>
+        <ObjectProperty abbreviatedIRI="gfo:part_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:has_participant"/>
+        <ObjectProperty abbreviatedIRI="gfo:participates_in"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:has_proper_part"/>
+        <ObjectProperty abbreviatedIRI="gfo:proper_part_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:has_property"/>
+        <ObjectProperty abbreviatedIRI="gfo:property_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:has_right_time_boundary"/>
+        <ObjectProperty abbreviatedIRI="gfo:right_boundary_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:has_role"/>
+        <ObjectProperty abbreviatedIRI="gfo:role_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:has_spatial_boundary"/>
+        <ObjectProperty abbreviatedIRI="gfo:spatial_boundary_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:has_temporal_part"/>
+        <ObjectProperty abbreviatedIRI="gfo:temporal_part_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:has_time_boundary"/>
+        <ObjectProperty abbreviatedIRI="gfo:time_boundary_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:has_token"/>
+        <ObjectProperty abbreviatedIRI="gfo:token_of"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:instance_of"/>
+        <ObjectProperty abbreviatedIRI="gfo:instantiated_by"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:occupied_by"/>
+        <ObjectProperty abbreviatedIRI="gfo:occupies"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:played_by"/>
+        <ObjectProperty abbreviatedIRI="gfo:plays_role"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty abbreviatedIRI="gfo:projection_of"/>
+        <ObjectProperty abbreviatedIRI="gfo:projects_to"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:boundary_of"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:exists_at"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:has_left_time_boundary"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:has_right_time_boundary"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:left_boundary_of"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:occupies"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:played_by"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:projects_to"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:right_boundary_of"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:spatial_boundary_of"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:time_boundary_of"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:has_boundary"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:has_left_time_boundary"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:has_property"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:has_right_time_boundary"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:has_spatial_boundary"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:has_time_boundary"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:left_boundary_of"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:occupied_by"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:plays_role"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:projection_of"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:right_boundary_of"/>
+    </InverseFunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:coincides_with"/>
+    </SymmetricObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:abstract_part_of"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:depends_on"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:has_part"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:has_proper_part"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:necessary_for"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:part_of"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:proper_part_of"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="gfo:temporal_part_of"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:coincides_with"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="gfo:Spatial_boundary"/>
+            <Class abbreviatedIRI="gfo:Time_boundary"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:exhibits"/>
+        <Class abbreviatedIRI="gfo:Perpetuant"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:exists_at"/>
+        <Class abbreviatedIRI="gfo:Presential"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:framed_by"/>
+        <Class abbreviatedIRI="gfo:Presential"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:frames"/>
+        <Class abbreviatedIRI="gfo:Space"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:has_participant"/>
+        <Class abbreviatedIRI="gfo:Processual_Structure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:has_property"/>
+        <Class abbreviatedIRI="gfo:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:has_role"/>
+        <Class abbreviatedIRI="gfo:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:has_spatial_boundary"/>
+        <Class abbreviatedIRI="gfo:Space"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:has_time_boundary"/>
+        <Class abbreviatedIRI="gfo:Temporal_region"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:has_token"/>
+        <Class abbreviatedIRI="gfo:Symbol_structure"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:instance_of"/>
+        <Class abbreviatedIRI="gfo:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:instantiated_by"/>
+        <Class abbreviatedIRI="gfo:Category"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:occupied_by"/>
+        <Class abbreviatedIRI="gfo:Space"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:occupies"/>
+        <Class abbreviatedIRI="gfo:Presential"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:part_of"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="gfo:Concrete"/>
+            <Class abbreviatedIRI="gfo:Space_time"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:participates_in"/>
+        <ObjectComplementOf>
+            <Class abbreviatedIRI="gfo:Processual_Structure"/>
+        </ObjectComplementOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:participates_in"/>
+        <ObjectComplementOf>
+            <Class abbreviatedIRI="gfo:Space_time"/>
+        </ObjectComplementOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:played_by"/>
+        <Class abbreviatedIRI="gfo:Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:plays_role"/>
+        <Class abbreviatedIRI="gfo:Entity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:projection_of"/>
+        <Class abbreviatedIRI="gfo:Time"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:property_of"/>
+        <Class abbreviatedIRI="gfo:Property"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:role_of"/>
+        <Class abbreviatedIRI="gfo:Role"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:spatial_boundary_of"/>
+        <Class abbreviatedIRI="gfo:Spatial_boundary"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:temporal_part_of"/>
+        <Class abbreviatedIRI="gfo:Time"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:time_boundary_of"/>
+        <Class abbreviatedIRI="gfo:Time_boundary"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="gfo:token_of"/>
+        <Class abbreviatedIRI="gfo:Concrete"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:coincides_with"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="gfo:Spatial_boundary"/>
+            <Class abbreviatedIRI="gfo:Time_boundary"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:exhibits"/>
+        <Class abbreviatedIRI="gfo:Presential"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:exists_at"/>
+        <Class abbreviatedIRI="gfo:Time_boundary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:framed_by"/>
+        <Class abbreviatedIRI="gfo:Space"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:frames"/>
+        <Class abbreviatedIRI="gfo:Presential"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:has_left_time_boundary"/>
+        <Class abbreviatedIRI="gfo:Left_time_boundary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:has_participant"/>
+        <ObjectComplementOf>
+            <Class abbreviatedIRI="gfo:Processual_Structure"/>
+        </ObjectComplementOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:has_participant"/>
+        <ObjectComplementOf>
+            <Class abbreviatedIRI="gfo:Space_time"/>
+        </ObjectComplementOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:has_property"/>
+        <Class abbreviatedIRI="gfo:Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:has_right_time_boundary"/>
+        <Class abbreviatedIRI="gfo:Right_time_boundary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:has_role"/>
+        <Class abbreviatedIRI="gfo:Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:has_spatial_boundary"/>
+        <Class abbreviatedIRI="gfo:Spatial_boundary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:has_time_boundary"/>
+        <Class abbreviatedIRI="gfo:Time_boundary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:has_token"/>
+        <Class abbreviatedIRI="gfo:Concrete"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:instance_of"/>
+        <Class abbreviatedIRI="gfo:Category"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:instantiated_by"/>
+        <Class abbreviatedIRI="gfo:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:occupied_by"/>
+        <Class abbreviatedIRI="gfo:Presential"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:occupies"/>
+        <Class abbreviatedIRI="gfo:Space"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:part_of"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="gfo:Concrete"/>
+            <Class abbreviatedIRI="gfo:Space_time"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:participates_in"/>
+        <Class abbreviatedIRI="gfo:Processual_Structure"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:played_by"/>
+        <Class abbreviatedIRI="gfo:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:plays_role"/>
+        <Class abbreviatedIRI="gfo:Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:projects_to"/>
+        <Class abbreviatedIRI="gfo:Time"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:role_of"/>
+        <Class abbreviatedIRI="gfo:Entity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:spatial_boundary_of"/>
+        <Class abbreviatedIRI="gfo:Space"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:temporal_part_of"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="gfo:Time"/>
+            <ObjectComplementOf>
+                <Class abbreviatedIRI="gfo:Time_boundary"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:time_boundary_of"/>
+        <Class abbreviatedIRI="gfo:Temporal_region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="gfo:token_of"/>
+        <Class abbreviatedIRI="gfo:Symbol_structure"/>
+    </ObjectPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Abstract</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Abstract individuals are independent from time and space (they are not in time and space).
+Examples: the number &quot;2&quot; or pi.
+[RH, 2006]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Abstract</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Abstract</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Amount_of_substrate</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An amount of substrate is a presential, namely the matter of some material object. Amounts of substrate follow different identity criteria than material objects, i.e., they instantiate different persistants.
+
+Appropriate connotations of &quot;amount of substrate&quot; are &quot;stuff&quot; (in the common understanding)  or &quot;mass term&quot; (in linguistics).
+
+[FL, 2008-03-13]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Amount_of_substrate</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Amount of substrate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Category</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Categories satisfy the following conditions: (1) Categories can be instantiated; (2) Categories can be predicated of other entities.
+Categories are defined intensional-with-an-s. They are, therefore, closely related to language.
+[RH, 2006]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Category</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Change</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A change refers to a structure centered around two presentials, which are boundaries of one and the same process. If they exist at coinciding time boundaries, the change comes close to notions in the literature like &quot;punctual&quot; or &quot;instantaneous event&quot; as well as &quot;moment&quot; (in a temporal reading). Alternatively, the presentials may be boundaries at the opposite ends of a process of arbitrary extension.
+
+Either notion of change is relative to contradictory conditions between which a transition takes place. These conditions refer to some collection of pairwise disjoint subcategories of one category.
+
+[FL, 2008-03-13]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Change</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Change</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>gfo:Change</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">[part1-v1.0.1, p. 30]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Chronoid</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Chronoids are entities sui generis.
+
+Every chronoid has exactly two extremal and
+infinitely many inner time boundaries which are
+equivalently called time-points.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Chronoid</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Chronoid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Concept</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Concepts are categories that are expressed by linguistic signs and are present in someone’s mind.
+[herre-h-2006--a, p.6]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Concept</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Concept</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Concrete</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Concrete individuals have a relation to time or space (they are in time and space).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Concrete</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Concrete</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Continuous_change</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A continuous change is a change such that
+(1) its process boundaries exist at non-coincident time-boundaries,
+(2) any two non-coincident process boundaries of its process are distinguished with respect to the reference category and
+(3) any two coincident process boundaries exhibit no such distinction, i.e., no discrete changes of the same reference category.
+[FL, 2008-03-13]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Continuous_change</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Continuous change</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>gfo:Continuous_change</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">[part1-v.1.0.1, p.30-31]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Continuous_process</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A process is a continuous process if it can be partitioned such that the partition contains only states or processes within a continuous change. Those states and changes must be based on the same reference category.
+[FL, 2008-03-13]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Continuous_process</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Continuous process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Discrete_change</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A discrete change is a change at coincident time boundaries, for which a recognizable difference exists. That means,  there is a category with two disjoint sub-categories such that each of these is instantiated by exactly one of the process boundaries in the change.
+[FL, 2008-03-13]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Discrete_change</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Discrete change</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Discrete_process</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Discrete processes have a partitioning into an alteration of discrete changes and states.
+[FL, 2008-03-13]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Discrete_process</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Discrete process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Entity</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Everything is an entity, i.e., entity is the category which everything instantiates.
+[FL, 2008-02-27]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Entity</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">We use the term entity for everything that exists where existence is understood in the broadest sense.
+[part1-v1.0.1, p.5]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Entity</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Event</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Events are processual structures comprising a process, and one of its extremal process boundaries. The latter must further satisfy a condition which differs from the condition applicable to all other boundaries of the process. I.e., the extremal boundary instantiates a sub-category of the event&apos;s reference category which is disjoint with that category instantiated by the remaining process boundaries. [FL, 2008-03-13]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Event</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>gfo:Event</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">[part1-v1.0.1, p.31-32]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:History</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Histories are processual structures which consist of a process and a number of presentials which are constituents of  the boundaries of that process.
+[FL, 2008-03-13]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:History</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">History</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Individual</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Individuals are entities that are not instantiable.
+[herre-h-2006--a, p.19]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Individual</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Individual</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Left_time_boundary</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">see time boundary description
+[FL, 2008-02-27]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Left_time_boundary</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Left time boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Line</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Surfaces are bound by lines.
+[FL, 2008-07-27]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Line</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Line</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Material_boundary</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A material entity which depends on a material object and occupies a spatial boundary.
+[FL, 2008-02-27]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Material_boundary</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Material boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Material_object</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A material structure is an individual which satisfies the following conditions: 
+it is a presential, it occupies space, it is a bearer of qualities,  but other entities cannot have
+it as quality, and it consists of an amount of substrate, and it instantiates a persistant (&quot;has identity&quot;).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Material_object</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Material object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Occurrent</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The category of occurrents comprises several categories that can be derived from processes.
+[FL, 2008-03-06 based on part1-v.1.0.1, p.30]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>gfo:Occurrent</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NOTE: In earlier versions, &quot;Occurrent&quot; denoted the category named &quot;Processual Structure&quot; herein.
+[FL, 2008-03-13]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Occurrent</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Occurrent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Perpetuant</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A perpetuant is a concrete individual which persists through time and exhibits presentials.
+[FL, 06.03.2008]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Perpetuant</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Perpetuant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Point</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Lines are bound by points.
+[FL, 2008-02-27]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Point</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Point</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Presential</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">A presential exists wholly at exactly one time boundary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Presential</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Presential</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Process</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Processes are directly in time, they develop over and unfold in time. Processes have characteristics which cannot be captured by a collection of time boundaries. In particular, processes exhibit internal coherence.
+[FL, 2008-03-13]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Process</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Process</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Processual_Structure</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The category of processual structures centers around the more intuitive notion of processes. It captures processes themselves and occurrents, i.e., primarily structures of several other kinds that can be derived from processes.
+[FL, 2008-03-13 based on part1-v1.0.1, p.30]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Processual_Structure</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Processual Structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Processual_role</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A processual role corresponds to the manner in which a single participant behaves in some process.
+[herre-h-2006--a, p.38]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Processual_role</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Processual roles are roles with a process as context, and they are dependent processes.
+[FL, 2008-02-27]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Processual_role</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Processual role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Property</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A property is a dependent entity which another entities has, i.e., that entity exhibits its property. Other common terms for property in natural language are characteristic, feature, quality, etc.
+[FL, 2008-02-27]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Property</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Relational_role</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relational role corresponds to the way in which an argument participates in some relation.
+[herre-h-2006--a, p.38]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Relational_role</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relational role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Relator</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A relator mediates between or connects entities. It is a dependent entity which depends on those entities connected.
+[FL, 2008-03-13]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Relator</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Relator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Right_time_boundary</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">see time boundary description
+[FL, 2008-02-27]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Right_time_boundary</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Right time boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Role</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>gfo:Role</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A role corresponds to the involvement of some entity (the player of the role) within another entity (the context of the role).
+Examples of role terms: student, patient, runner, reader, factor.
+[FL, 2008-02-27]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Social_role</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A social role corresponds to the involvement of a social object within some society.
+[herre-h-2006--a, p.38]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Social_role</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Social role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Space</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Spatial entities in GFO are analyzed according to the ideas of Franz Brentano. Starting from connected three-dimensional entitites (topoids), related spatial entities can be distinguished.
+[FL, 2008-02-27]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Space</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Space entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>gfo:Space</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">[herre-h-2006--a, sect. 5.2]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Space_time</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A space-time-entity is something in which concrete entities can be located.
+[FL, 2008-02-27]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Space_time</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Space time entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Spatial_boundary</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Boundaries of regions are surfaces, boundaries of
+surfaces are lines, and boundaries of lines are
+points. As in the case of time-boundaries, spatial
+boundaries have no independent existence, i.e. they depend on the
+spatial entity of which they are  boundaries.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Spatial_boundary</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Spatial boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Spatial_region</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Space regions are mereological sums of topoids.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Spatial_region</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Spatial region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:State</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A process is a state with respect to a category iff every of its process boundaries instantiates that category.
+[FL, 2008-03-13]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:State</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">State</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <AbbreviatedIRI>gfo:State</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">[part1-v1.0.1, p.34]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Surface</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Topoids are bounded by surfaces.
+[FL, 2008-02-27]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Surface</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Surface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Symbol_structure</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Symbolic structures are signs or texts that may be instantiated by tokens.
+[herre-h-2006--a, p.6]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Symbol_structure</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Symbol structure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Temporal_region</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Time Regions are defined as the mereological sum of chronoids,
+i.e. time regions may consist of non-connected intervals of time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Temporal_region</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Temporal region</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Time</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">The time model of GFO is based on Brentano and the glass continuum of Allen&amp;Hayes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Time</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Time_boundary</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time boundaries depend on a chronoids and can coincide.
+
+Left time boundaries, if viewed from the perspective of bounding a specific chronoid, are those which are earlier than any inner or right time boundary of that chronoid. On the other hand, within a pair of coincident time boundaries, a left time boundary is later than the right time boundary in that pair.
+
+[FL, 2008-02-27]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Time_boundary</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Topoid</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Topoids are connected compact regions of space. They have spatial boundaries.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Topoid</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Topoid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:Universal</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Universals are immanent categories. They exist in re.
+[FL, 2008-02-27]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:Universal</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Universal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:abstract_has_part</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Abstract has-part is the inverse of the abstract part-of relationship.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:abstract_has_part</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">abstract has-part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:abstract_part_of</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The abstract part-of relation is denoted by p(x,y); the argument-types of this relation are not specified, i.e. we allow arbitrary entities to be arguments. We assume that p(x,y) satisfies the condition of a partial ordering, .i.e. the following axioms: reflexivity, antisymmetry and transitivity.
+[RH, 2006 based on herre-h-2006--a, p.44]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:abstract_part_of</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">abstract part-of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:boundary_of</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&quot;Boundary of&quot; connects boundaries to the entities which they bind.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:boundary_of</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">boundary of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:coincides_with</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Coincidence is a relationship between space boundaries or time boundaries, respectively. Intuitively, two such boundaries are coincident if and only if they occupy “the same” space, or point in time, but they are still different entities.
+[herre-h-2006--a, p.46]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:coincides_with</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">coincides with</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:depends_on</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This relation captures the notion of existential dependence.
+[RH, 2006]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:depends_on</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">depends on</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:exhibits</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">In the GFO-account of persistence, perpetuants exhibit presentials, i.e., the former ``exist through&apos;&apos; the latter at the time where the presential exists. With respect to persistants, presentials instantiate persistants.
+[FL, 2008-07-10]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:exhibits</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">exhibits</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:exists_at</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Presentials exist at a single time boundary.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:exists_at</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">exists at</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:framed_by</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A presential is framed by a spatial region if the location which the presential occupies is a spatial part of that region.
+[FL, 2008-02-27, based on herre-h-2006--a, p. 21]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:framed_by</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">framed by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:frames</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A spatial region frames a presential if the location which the presential occupies is a spatial part of that region.
+[FL, 2008-02-27, based on herre-h-2006--a, p. 21]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:frames</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">frames</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:has_boundary</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The has-boundary relation connects entities with their boundaries, e.g. chronoids to time boundaries, topoids to surfaces, etc.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:has_boundary</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:has_left_time_boundary</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Temporal regions have exactly one extremal left time boundary.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:has_left_time_boundary</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has left time boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:has_part</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The inverse of part-of.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:has_part</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has-part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:has_participant</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Temporally extended entities have participants.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:has_participant</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has participant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:has_proper_part</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The inverse of proper part-of.
+[FL 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:has_proper_part</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has proper part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:has_property</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Entities can have properties. In GFO, properties are individualized, and &quot;has property&quot; links an entity to its particular property.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:has_property</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:has_right_time_boundary</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Temporal regions have exactly one extremal right time boundary.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:has_right_time_boundary</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has right time boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:has_role</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The inverse of role of.
+[FL, 06.07.2008]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:has_role</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:has_spatial_boundary</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Space entities may have spatial boundaries.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:has_spatial_boundary</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has spatial boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:has_temporal_part</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The inverse of temporal part-of.
+[FL, 2008-03-13]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:has_temporal_part</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has temporal part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:has_time_boundary</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Temporal regions have temporal boundaries.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:has_time_boundary</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has time boundary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:has_token</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The specific relation from a symbol structure (a category in GFO) to an entity seen as an occurrence of that symbol structure, as a token of it.
+[FL 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:has_token</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has token</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:instance_of</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The instantiation relation holds between an entity and a category. Put differently, the category is predicated of that entity, the entity is the instance of that category. Entities of all kinds can be instances, which results in categories which have individuals as instances or categories which may have categories as instances, such as &quot;species&quot;.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:instance_of</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">instance of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:instantiated_by</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Inverse of instance of.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:instantiated_by</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">instantiated by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:left_boundary_of</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Left boundary of a temporal region.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:left_boundary_of</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">left boundary of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:necessary_for</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An entity is necessary for another one if the latter is required for the former to exist.
+[FL 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:necessary_for</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">necessary for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:occupied_by</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Presentials exist in space, and the space entity occupied by a presential is uniquely determined (where a fixed granularity is assumed).
+[FL, 2008-02-27 based on herre-h-2006--a, p.21]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:occupied_by</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">occupied by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:occupies</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Presentials exist in space, and the space entity occupied by a presential is uniquely determined (where a fixed granularity is assumed).
+[FL, 2008-02-27 based on herre-h-2006--a, p.21]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:occupies</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">occupies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:part_of</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The relation between parts and wholes.
+The union of several domain-specific part-of relationships not contained explicitly in gfo-basic, like spatial part-of or part-of among material structures.
+[FL, 2008-03-13]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:part_of</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:participates_in</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Intuitively, objects participate in processes, for instance. In GFO, participation accommodates the GFO approach to persistence, i.e., at least presentials can participate in processes. Moreover, it is useful to extend the notion of participation also to other temporally extended entities.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:participates_in</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">participates in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:played_by</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The inverse of plays-role.
+[FL, 06.07.2008]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:played_by</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">played by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:plays_role</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Entities can play roles with respect to some other entity which provides a context for that role. The plays-role relationship links an entity with its role.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:plays_role</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">plays role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:projection_of</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">If, for instance, a process happens during a certain time, i.e., some temporal region, that region is the projection of that process (to time).
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:projection_of</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">projection of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:projects_to</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links an entity to its temporal extension.
+Entities which are in time are related to the corresponding temporal regions by projects to. Moreover, entities related to others which are in time may likewise project to temporal regions.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:projects_to</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">projects to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:proper_part_of</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The irreflexive variant of part-of.
+[FL 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:proper_part_of</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">proper part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:property_of</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Links properties to their bearers.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:property_of</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">property of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:right_boundary_of</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Right boundary of a temporal region.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:right_boundary_of</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">right boundary of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:role_of</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The relationship between a role and its context. Typically, the nature of the context determines that of the roles, which are in some sense a part of that context. E.g., processes form the context for certain roles (processual roles), such that the latter are recognizable as processes.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:role_of</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">role of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:spatial_boundary_of</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Spatial boundaries may bound spatial entities.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:spatial_boundary_of</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">spatial boundary of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:temporal_part_of</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A part-of relationship between two time entities. Time-boundaries cannot have parts.
+[FL, 2008-03-13]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:temporal_part_of</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">temporal part-of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:time_boundary_of</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Time boundaries bound temporal regions.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:time_boundary_of</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">time boundary of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <AbbreviatedIRI>gfo:token_of</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Inverse of the has token relations.
+[FL, 2008-02-28]</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>gfo:token_of</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">token of</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
