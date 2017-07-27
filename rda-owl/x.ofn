@@ -1,0 +1,327 @@
+Prefix(:=<http://rdaregistry.info/Elements/x#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(reg:=<http://metadataregistry.org/uri/profile/regap/>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+
+
+Ontology(<http://rdaregistry.info/Elements/x>
+
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10001>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10002>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10003>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10004>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10005>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10006>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10007>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10008>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10009>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10010>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10011>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10012>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10013>))
+Declaration(Class(skos:Concept))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/a/object/P50304>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/a/object/P50310>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/a/object/P50319>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/a/object/P50328>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/a/object/P50360>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/e/object/P20297>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/i/object/P40068>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/m/object/P30264>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/n/object/P80010>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/p/object/P70013>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/object/P70010>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/w/object/P10307>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/w/object/P10324>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/P00001>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/P00002>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/P00003>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/P00004>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/P00005>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/P00006>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/P00007>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/P00008>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/P00009>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/P00010>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/P00011>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/P00012>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/P00013>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/P00014>))
+Declaration(NamedIndividual(<http://metadataregistry.org/uri/RegStatus/1001>))
+Declaration(AnnotationProperty(reg:hasSubproperty))
+Declaration(AnnotationProperty(reg:lexicalAlias))
+Declaration(AnnotationProperty(reg:name))
+Declaration(AnnotationProperty(reg:status))
+Declaration(AnnotationProperty(dc:title))
+Declaration(AnnotationProperty(skos:prefLabel))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://rdaregistry.info/Elements/a/object/P50304> (<http://rdaregistry.info/Elements/a/object/P50304>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/a/object/P50304> <http://rdaregistry.info/Elements/x/P00006>)
+
+# Object Property: <http://rdaregistry.info/Elements/a/object/P50310> (<http://rdaregistry.info/Elements/a/object/P50310>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/a/object/P50310> <http://rdaregistry.info/Elements/x/P00007>)
+
+# Object Property: <http://rdaregistry.info/Elements/a/object/P50319> (<http://rdaregistry.info/Elements/a/object/P50319>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/a/object/P50319> <http://rdaregistry.info/Elements/x/P00008>)
+
+# Object Property: <http://rdaregistry.info/Elements/a/object/P50328> (<http://rdaregistry.info/Elements/a/object/P50328>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/a/object/P50328> <http://rdaregistry.info/Elements/x/P00009>)
+
+# Object Property: <http://rdaregistry.info/Elements/a/object/P50360> (<http://rdaregistry.info/Elements/a/object/P50360>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/a/object/P50360> <http://rdaregistry.info/Elements/x/P00012>)
+
+# Object Property: <http://rdaregistry.info/Elements/e/object/P20297> (<http://rdaregistry.info/Elements/e/object/P20297>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/e/object/P20297> <http://rdaregistry.info/Elements/x/P00003>)
+
+# Object Property: <http://rdaregistry.info/Elements/i/object/P40068> (<http://rdaregistry.info/Elements/i/object/P40068>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/i/object/P40068> <http://rdaregistry.info/Elements/x/P00005>)
+
+# Object Property: <http://rdaregistry.info/Elements/m/object/P30264> (<http://rdaregistry.info/Elements/m/object/P30264>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/m/object/P30264> <http://rdaregistry.info/Elements/x/P00004>)
+
+# Object Property: <http://rdaregistry.info/Elements/n/object/P80010> (<http://rdaregistry.info/Elements/n/object/P80010>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/n/object/P80010> <http://rdaregistry.info/Elements/x/P00013>)
+
+# Object Property: <http://rdaregistry.info/Elements/p/object/P70013> (<http://rdaregistry.info/Elements/p/object/P70013>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/p/object/P70013> <http://rdaregistry.info/Elements/x/P00010>)
+
+# Object Property: <http://rdaregistry.info/Elements/t/object/P70010> (<http://rdaregistry.info/Elements/t/object/P70010>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/t/object/P70010> <http://rdaregistry.info/Elements/x/P00011>)
+
+# Object Property: <http://rdaregistry.info/Elements/w/object/P10307> (<http://rdaregistry.info/Elements/w/object/P10307>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/w/object/P10307> <http://rdaregistry.info/Elements/x/P00002>)
+
+# Object Property: <http://rdaregistry.info/Elements/w/object/P10324> (<http://rdaregistry.info/Elements/w/object/P10324>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/w/object/P10324> <http://rdaregistry.info/Elements/x/P00014>)
+
+# Object Property: <http://rdaregistry.info/Elements/x/> (<http://rdaregistry.info/Elements/x/>)
+
+AnnotationAssertion(dc:title <http://rdaregistry.info/Elements/x/> "RDA Entity object properties"@en)
+
+# Object Property: <http://rdaregistry.info/Elements/x/P00001> (has related entity)
+
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/a/object/P50304>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/m/object/P30264>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/n/object/P80010>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/p/object/P70013>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/t/object/P70010>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/x/P00002>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/x/P00004>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/x/P00005>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/x/P00006>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/x/P00010>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/x/P00011>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/x/P00013>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/x/P00014>)
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/x/object/relatedEntity.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/x/P00001> "relatedEntity"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/x/P00001> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/x/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/x/P00001> "has related entity"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/x/P00001>)
+InverseObjectProperties(<http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/x/P00001>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/c/C10013>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/x/P00001> <http://rdaregistry.info/Elements/c/C10013>)
+
+# Object Property: <http://rdaregistry.info/Elements/x/P00002> (has related work)
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/x/P00002> <http://rdaregistry.info/Elements/x/object/relatedWork.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/x/P00002> "relatedWork"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/x/P00002> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/x/P00002> <http://rdaregistry.info/Elements/x/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/x/P00002> "has related work"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00002> <http://rdaregistry.info/Elements/x/P00001>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00002> <http://rdaregistry.info/Elements/x/P00002>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/x/P00002> <http://rdaregistry.info/Elements/c/C10013>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/x/P00002> <http://rdaregistry.info/Elements/c/C10001>)
+
+# Object Property: <http://rdaregistry.info/Elements/x/P00003> (has related expression)
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/x/P00003> <http://rdaregistry.info/Elements/x/object/relatedExpression.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/x/P00003> "relatedExpression"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/x/P00003> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/x/P00003> <http://rdaregistry.info/Elements/x/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/x/P00003> "has related expression"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00003> <http://rdaregistry.info/Elements/x/P00001>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00003> <http://rdaregistry.info/Elements/x/P00003>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/x/P00003> <http://rdaregistry.info/Elements/c/C10013>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/x/P00003> <http://rdaregistry.info/Elements/c/C10006>)
+
+# Object Property: <http://rdaregistry.info/Elements/x/P00004> (has related manifestation)
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/x/P00004> <http://rdaregistry.info/Elements/x/object/relatedManifestation.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/x/P00004> "relatedManifestation"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/x/P00004> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/x/P00004> <http://rdaregistry.info/Elements/x/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/x/P00004> "has related manifestation"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00004> <http://rdaregistry.info/Elements/x/P00001>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00004> <http://rdaregistry.info/Elements/x/P00004>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/x/P00004> <http://rdaregistry.info/Elements/c/C10013>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/x/P00004> <http://rdaregistry.info/Elements/c/C10007>)
+
+# Object Property: <http://rdaregistry.info/Elements/x/P00005> (has related item)
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/x/P00005> <http://rdaregistry.info/Elements/x/object/relatedItem.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/x/P00005> "relatedItem"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/x/P00005> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/x/P00005> <http://rdaregistry.info/Elements/x/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/x/P00005> "has related item"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00005> <http://rdaregistry.info/Elements/x/P00001>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00005> <http://rdaregistry.info/Elements/x/P00005>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/x/P00005> <http://rdaregistry.info/Elements/c/C10013>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/x/P00005> <http://rdaregistry.info/Elements/c/C10003>)
+
+# Object Property: <http://rdaregistry.info/Elements/x/P00006> (has related agent)
+
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00006> <http://rdaregistry.info/Elements/x/P00007>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00006> <http://rdaregistry.info/Elements/x/P00012>)
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/x/P00006> <http://rdaregistry.info/Elements/x/object/relatedAgent.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/x/P00006> "relatedAgent"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/x/P00006> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/x/P00006> <http://rdaregistry.info/Elements/x/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/x/P00006> "has related agent"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00006> <http://rdaregistry.info/Elements/x/P00001>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00006> <http://rdaregistry.info/Elements/x/P00006>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/x/P00006> <http://rdaregistry.info/Elements/c/C10013>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/x/P00006> <http://rdaregistry.info/Elements/c/C10002>)
+
+# Object Property: <http://rdaregistry.info/Elements/x/P00007> (has related person)
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/x/P00007> <http://rdaregistry.info/Elements/x/object/relatedPerson.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/x/P00007> "relatedPerson"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/x/P00007> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/x/P00007> <http://rdaregistry.info/Elements/x/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/x/P00007> "has related person"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00007> <http://rdaregistry.info/Elements/x/P00006>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00007> <http://rdaregistry.info/Elements/x/P00007>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/x/P00007> <http://rdaregistry.info/Elements/c/C10013>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/x/P00007> <http://rdaregistry.info/Elements/c/C10004>)
+
+# Object Property: <http://rdaregistry.info/Elements/x/P00008> (has related family)
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/x/P00008> <http://rdaregistry.info/Elements/x/object/relatedFamily.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/x/P00008> "relatedFamily"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/x/P00008> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/x/P00008> <http://rdaregistry.info/Elements/x/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/x/P00008> "has related family"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00008> <http://rdaregistry.info/Elements/x/P00008>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00008> <http://rdaregistry.info/Elements/x/P00012>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/x/P00008> <http://rdaregistry.info/Elements/c/C10013>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/x/P00008> <http://rdaregistry.info/Elements/c/C10008>)
+
+# Object Property: <http://rdaregistry.info/Elements/x/P00009> (has related corporate body)
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/x/P00009> <http://rdaregistry.info/Elements/x/object/relatedCorporateBody.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/x/P00009> "relatedCorporateBody"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/x/P00009> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/x/P00009> <http://rdaregistry.info/Elements/x/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/x/P00009> "has related corporate body"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00009> <http://rdaregistry.info/Elements/x/P00009>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00009> <http://rdaregistry.info/Elements/x/P00012>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/x/P00009> <http://rdaregistry.info/Elements/c/C10013>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/x/P00009> <http://rdaregistry.info/Elements/c/C10005>)
+
+# Object Property: <http://rdaregistry.info/Elements/x/P00010> (has related place)
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/x/P00010> <http://rdaregistry.info/Elements/x/object/relatedPlace.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/x/P00010> "relatedPlace"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/x/P00010> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/x/P00010> <http://rdaregistry.info/Elements/x/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/x/P00010> "has related place"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00010> <http://rdaregistry.info/Elements/x/P00001>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00010> <http://rdaregistry.info/Elements/x/P00010>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/x/P00010> <http://rdaregistry.info/Elements/c/C10013>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/x/P00010> <http://rdaregistry.info/Elements/c/C10009>)
+
+# Object Property: <http://rdaregistry.info/Elements/x/P00011> (has related time-span)
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/x/P00011> <http://rdaregistry.info/Elements/x/object/relatedTimespan.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/x/P00011> "relatedTimespan"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/x/P00011> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/x/P00011> <http://rdaregistry.info/Elements/x/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/x/P00011> "has related time-span"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00011> <http://rdaregistry.info/Elements/x/P00001>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00011> <http://rdaregistry.info/Elements/x/P00011>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/x/P00011> <http://rdaregistry.info/Elements/c/C10013>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/x/P00011> <http://rdaregistry.info/Elements/c/C10010>)
+
+# Object Property: <http://rdaregistry.info/Elements/x/P00012> (has related collective agent)
+
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00012> <http://rdaregistry.info/Elements/x/P00008>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00012> <http://rdaregistry.info/Elements/x/P00009>)
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/x/P00012> <http://rdaregistry.info/Elements/x/object/relatedCollectiveAgent.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/x/P00012> "relatedCollectiveAgent"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/x/P00012> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/x/P00012> <http://rdaregistry.info/Elements/x/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/x/P00012> "has related collective agent"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00012> <http://rdaregistry.info/Elements/x/P00006>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00012> <http://rdaregistry.info/Elements/x/P00012>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/x/P00012> <http://rdaregistry.info/Elements/c/C10013>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/x/P00012> <http://rdaregistry.info/Elements/c/C10011>)
+
+# Object Property: <http://rdaregistry.info/Elements/x/P00013> (has related nomen)
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/x/P00013> <http://rdaregistry.info/Elements/x/object/relatedNomen.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/x/P00013> "relatedNomen"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/x/P00013> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/x/P00013> <http://rdaregistry.info/Elements/x/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/x/P00013> "has related nomen"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00013> <http://rdaregistry.info/Elements/x/P00001>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00013> <http://rdaregistry.info/Elements/x/P00013>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/x/P00013> <http://rdaregistry.info/Elements/c/C10013>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/x/P00013> <http://rdaregistry.info/Elements/c/C10012>)
+
+# Object Property: <http://rdaregistry.info/Elements/x/P00014> (is subject of (entity))
+
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00014> <http://rdaregistry.info/Elements/a/object/P50366>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00014> <http://rdaregistry.info/Elements/n/object/P80014>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00014> <http://rdaregistry.info/Elements/p/object/P70017>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/x/P00014> <http://rdaregistry.info/Elements/t/object/P70014>)
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/x/P00014> <http://rdaregistry.info/Elements/x/object/subjectOfEntity.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/x/P00014> "subjectOfEntity"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/x/P00014> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/x/P00014> <http://rdaregistry.info/Elements/x/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/x/P00014> "is subject of (entity)"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00014> <http://rdaregistry.info/Elements/x/P00001>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/x/P00014> <http://rdaregistry.info/Elements/x/P00014>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/x/P00014> <http://rdaregistry.info/Elements/c/C10013>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/x/P00014> <http://rdaregistry.info/Elements/c/C10001>)
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://metadataregistry.org/uri/RegStatus/1001> (<http://metadataregistry.org/uri/RegStatus/1001>)
+
+AnnotationAssertion(skos:prefLabel <http://metadataregistry.org/uri/RegStatus/1001> "Published"@en)
+ClassAssertion(skos:Concept <http://metadataregistry.org/uri/RegStatus/1001>)
+
+
+)

@@ -1,0 +1,314 @@
+Prefix(:=<http://rdaregistry.info/Elements/t#>)
+Prefix(dc:=<http://purl.org/dc/elements/1.1/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(reg:=<http://metadataregistry.org/uri/profile/regap/>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(foaf:=<http://xmlns.com/foaf/0.1/>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+
+
+Ontology(<http://rdaregistry.info/Elements/t>
+
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10001>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10002>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10003>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10004>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10005>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10006>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10007>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10008>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10009>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10010>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10011>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10012>))
+Declaration(Class(<http://rdaregistry.info/Elements/c/C10013>))
+Declaration(Class(skos:Concept))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/a/object/P50339>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/a/object/P50343>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/a/object/P50347>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/a/object/P50351>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/a/object/P50355>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/e/object/P20307>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/i/object/P40078>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/m/object/P30273>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/n/object/P80008>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/p/object/P70011>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/P70001>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/P70002>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/P70003>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/P70004>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/P70005>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/P70006>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/P70007>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/P70008>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/P70009>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/P70010>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/P70011>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/P70012>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/P70013>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/t/P70014>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/w/object/P10317>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/w/object/P10322>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/object/P00001>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/object/P00011>))
+Declaration(ObjectProperty(<http://rdaregistry.info/Elements/x/object/P00014>))
+Declaration(NamedIndividual(<http://metadataregistry.org/uri/RegStatus/1001>))
+Declaration(AnnotationProperty(reg:hasSubproperty))
+Declaration(AnnotationProperty(reg:lexicalAlias))
+Declaration(AnnotationProperty(reg:name))
+Declaration(AnnotationProperty(reg:status))
+Declaration(AnnotationProperty(dc:title))
+Declaration(AnnotationProperty(skos:note))
+Declaration(AnnotationProperty(skos:prefLabel))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://rdaregistry.info/Elements/a/object/P50339> (<http://rdaregistry.info/Elements/a/object/P50339>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/a/object/P50339> <http://rdaregistry.info/Elements/t/P70005>)
+
+# Object Property: <http://rdaregistry.info/Elements/a/object/P50343> (<http://rdaregistry.info/Elements/a/object/P50343>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/a/object/P50343> <http://rdaregistry.info/Elements/t/P70006>)
+
+# Object Property: <http://rdaregistry.info/Elements/a/object/P50347> (<http://rdaregistry.info/Elements/a/object/P50347>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/a/object/P50347> <http://rdaregistry.info/Elements/t/P70011>)
+
+# Object Property: <http://rdaregistry.info/Elements/a/object/P50351> (<http://rdaregistry.info/Elements/a/object/P50351>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/a/object/P50351> <http://rdaregistry.info/Elements/t/P70013>)
+
+# Object Property: <http://rdaregistry.info/Elements/a/object/P50355> (<http://rdaregistry.info/Elements/a/object/P50355>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/a/object/P50355> <http://rdaregistry.info/Elements/t/P70012>)
+
+# Object Property: <http://rdaregistry.info/Elements/e/object/P20307> (<http://rdaregistry.info/Elements/e/object/P20307>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/e/object/P20307> <http://rdaregistry.info/Elements/t/P70002>)
+
+# Object Property: <http://rdaregistry.info/Elements/i/object/P40078> (<http://rdaregistry.info/Elements/i/object/P40078>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/i/object/P40078> <http://rdaregistry.info/Elements/t/P70004>)
+
+# Object Property: <http://rdaregistry.info/Elements/m/object/P30273> (<http://rdaregistry.info/Elements/m/object/P30273>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/m/object/P30273> <http://rdaregistry.info/Elements/t/P70003>)
+
+# Object Property: <http://rdaregistry.info/Elements/n/object/P80008> (<http://rdaregistry.info/Elements/n/object/P80008>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/n/object/P80008> <http://rdaregistry.info/Elements/t/P70009>)
+
+# Object Property: <http://rdaregistry.info/Elements/p/object/P70011> (<http://rdaregistry.info/Elements/p/object/P70011>)
+
+InverseObjectProperties(<http://rdaregistry.info/Elements/p/object/P70011> <http://rdaregistry.info/Elements/t/P70007>)
+
+# Object Property: <http://rdaregistry.info/Elements/t/> (<http://rdaregistry.info/Elements/t/>)
+
+AnnotationAssertion(dc:title <http://rdaregistry.info/Elements/t/> "RDA Time-span object properties"@en)
+AnnotationAssertion(skos:note <http://rdaregistry.info/Elements/t/> "Object properties derived from RDA elements and relationship designators with the domain of RDA Time-span."@en)
+
+# Object Property: <http://rdaregistry.info/Elements/t/P70001> (has related work (time-span))
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/t/P70001> <http://rdaregistry.info/Elements/t/object/relatedWorkTimespan.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/t/P70001> "relatedWorkTimespan"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/t/P70001> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/t/P70001> <http://rdaregistry.info/Elements/t/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/t/P70001> "has related work (time-span)"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70001> <http://rdaregistry.info/Elements/t/P70001>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70001> <http://rdaregistry.info/Elements/t/P70010>)
+InverseObjectProperties(<http://rdaregistry.info/Elements/t/P70001> <http://rdaregistry.info/Elements/w/object/P10317>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/t/P70001> <http://rdaregistry.info/Elements/c/C10010>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/t/P70001> <http://rdaregistry.info/Elements/c/C10001>)
+
+# Object Property: <http://rdaregistry.info/Elements/t/P70002> (has related expression (time-span))
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/t/P70002> <http://rdaregistry.info/Elements/t/object/relatedExpressionTimespan.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/t/P70002> "relatedExpressionTimespan"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/t/P70002> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/t/P70002> <http://rdaregistry.info/Elements/t/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/t/P70002> "has related expression (time-span)"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70002> <http://rdaregistry.info/Elements/t/P70002>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70002> <http://rdaregistry.info/Elements/t/P70010>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/t/P70002> <http://rdaregistry.info/Elements/c/C10010>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/t/P70002> <http://rdaregistry.info/Elements/c/C10006>)
+
+# Object Property: <http://rdaregistry.info/Elements/t/P70003> (has related manifestation (time-span))
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/t/P70003> <http://rdaregistry.info/Elements/t/object/relatedManifestationTimespan.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/t/P70003> "relatedManifestationTimespan"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/t/P70003> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/t/P70003> <http://rdaregistry.info/Elements/t/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/t/P70003> "has related manifestation (time-span)"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70003> <http://rdaregistry.info/Elements/t/P70003>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70003> <http://rdaregistry.info/Elements/t/P70010>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/t/P70003> <http://rdaregistry.info/Elements/c/C10010>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/t/P70003> <http://rdaregistry.info/Elements/c/C10007>)
+
+# Object Property: <http://rdaregistry.info/Elements/t/P70004> (has related item (time-span))
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/t/P70004> <http://rdaregistry.info/Elements/t/object/relatedItemTimespan.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/t/P70004> "relatedItemTimespan"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/t/P70004> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/t/P70004> <http://rdaregistry.info/Elements/t/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/t/P70004> "has related item (time-span)"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70004> <http://rdaregistry.info/Elements/t/P70004>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70004> <http://rdaregistry.info/Elements/t/P70010>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/t/P70004> <http://rdaregistry.info/Elements/c/C10010>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/t/P70004> <http://rdaregistry.info/Elements/c/C10003>)
+
+# Object Property: <http://rdaregistry.info/Elements/t/P70005> (has related agent (time-span))
+
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/t/P70005> <http://rdaregistry.info/Elements/t/P70006>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/t/P70005> <http://rdaregistry.info/Elements/t/P70011>)
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/t/P70005> <http://rdaregistry.info/Elements/t/object/relatedAgentTimespan.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/t/P70005> "relatedAgentTimespan"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/t/P70005> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/t/P70005> <http://rdaregistry.info/Elements/t/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/t/P70005> "has related agent (time-span)"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70005> <http://rdaregistry.info/Elements/t/P70005>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70005> <http://rdaregistry.info/Elements/t/P70010>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/t/P70005> <http://rdaregistry.info/Elements/c/C10010>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/t/P70005> <http://rdaregistry.info/Elements/c/C10002>)
+
+# Object Property: <http://rdaregistry.info/Elements/t/P70006> (has related collective agent (time-span))
+
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/t/P70006> <http://rdaregistry.info/Elements/t/P70012>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/t/P70006> <http://rdaregistry.info/Elements/t/P70013>)
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/t/P70006> <http://rdaregistry.info/Elements/t/object/relatedCollectiveAgentTimespan.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/t/P70006> "relatedCollectiveAgentTimespan"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/t/P70006> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/t/P70006> <http://rdaregistry.info/Elements/t/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/t/P70006> "has related collective agent (time-span)"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70006> <http://rdaregistry.info/Elements/t/P70005>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70006> <http://rdaregistry.info/Elements/t/P70006>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/t/P70006> <http://rdaregistry.info/Elements/c/C10010>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/t/P70006> <http://rdaregistry.info/Elements/c/C10011>)
+
+# Object Property: <http://rdaregistry.info/Elements/t/P70007> (has related place (time-span))
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/t/P70007> <http://rdaregistry.info/Elements/t/object/relatedPlaceTimespan.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/t/P70007> "relatedPlaceTimespan"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/t/P70007> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/t/P70007> <http://rdaregistry.info/Elements/t/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/t/P70007> "has related place (time-span)"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70007> <http://rdaregistry.info/Elements/t/P70007>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70007> <http://rdaregistry.info/Elements/t/P70010>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/t/P70007> <http://rdaregistry.info/Elements/c/C10010>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/t/P70007> <http://rdaregistry.info/Elements/c/C10009>)
+
+# Object Property: <http://rdaregistry.info/Elements/t/P70008> (has related time-span (time-span))
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/t/P70008> <http://rdaregistry.info/Elements/t/object/relatedTimespanTimespan.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/t/P70008> "relatedTimespanTimespan"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/t/P70008> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/t/P70008> <http://rdaregistry.info/Elements/t/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/t/P70008> "has related time-span (time-span)"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70008> <http://rdaregistry.info/Elements/t/P70008>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70008> <http://rdaregistry.info/Elements/t/P70010>)
+InverseObjectProperties(<http://rdaregistry.info/Elements/t/P70008> <http://rdaregistry.info/Elements/t/P70008>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/t/P70008> <http://rdaregistry.info/Elements/c/C10010>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/t/P70008> <http://rdaregistry.info/Elements/c/C10010>)
+
+# Object Property: <http://rdaregistry.info/Elements/t/P70009> (has related nomen (time-span))
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/t/P70009> <http://rdaregistry.info/Elements/t/object/relatedNomenTimespan.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/t/P70009> "relatedNomenTimespan"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/t/P70009> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/t/P70009> <http://rdaregistry.info/Elements/t/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/t/P70009> "has related nomen (time-span)"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70009> <http://rdaregistry.info/Elements/t/P70009>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70009> <http://rdaregistry.info/Elements/t/P70010>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/t/P70009> <http://rdaregistry.info/Elements/c/C10010>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/t/P70009> <http://rdaregistry.info/Elements/c/C10012>)
+
+# Object Property: <http://rdaregistry.info/Elements/t/P70010> (has related entity (time-span))
+
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/t/P70010> <http://rdaregistry.info/Elements/t/P70001>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/t/P70010> <http://rdaregistry.info/Elements/t/P70002>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/t/P70010> <http://rdaregistry.info/Elements/t/P70003>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/t/P70010> <http://rdaregistry.info/Elements/t/P70004>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/t/P70010> <http://rdaregistry.info/Elements/t/P70005>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/t/P70010> <http://rdaregistry.info/Elements/t/P70007>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/t/P70010> <http://rdaregistry.info/Elements/t/P70008>)
+AnnotationAssertion(reg:hasSubproperty <http://rdaregistry.info/Elements/t/P70010> <http://rdaregistry.info/Elements/t/P70009>)
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/t/P70010> <http://rdaregistry.info/Elements/t/object/relatedEntityTimespan.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/t/P70010> "relatedEntityTimespan"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/t/P70010> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/t/P70010> <http://rdaregistry.info/Elements/t/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/t/P70010> "has related entity (time-span)"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70010> <http://rdaregistry.info/Elements/t/P70010>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70010> <http://rdaregistry.info/Elements/x/object/P00001>)
+InverseObjectProperties(<http://rdaregistry.info/Elements/t/P70010> <http://rdaregistry.info/Elements/x/object/P00011>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/t/P70010> <http://rdaregistry.info/Elements/c/C10010>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/t/P70010> <http://rdaregistry.info/Elements/c/C10013>)
+
+# Object Property: <http://rdaregistry.info/Elements/t/P70011> (has related person (time-span))
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/t/P70011> <http://rdaregistry.info/Elements/t/object/relatedPersonTimespan.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/t/P70011> "relatedPersonTimespan"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/t/P70011> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/t/P70011> <http://rdaregistry.info/Elements/t/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/t/P70011> "has related person (time-span)"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70011> <http://rdaregistry.info/Elements/t/P70005>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70011> <http://rdaregistry.info/Elements/t/P70011>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/t/P70011> <http://rdaregistry.info/Elements/c/C10010>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/t/P70011> <http://rdaregistry.info/Elements/c/C10004>)
+
+# Object Property: <http://rdaregistry.info/Elements/t/P70012> (has related family (time-span))
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/t/P70012> <http://rdaregistry.info/Elements/t/object/relatedFamilyTimespan.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/t/P70012> "relatedFamilyTimespan"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/t/P70012> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/t/P70012> <http://rdaregistry.info/Elements/t/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/t/P70012> "has related family (time-span)"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70012> <http://rdaregistry.info/Elements/t/P70006>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70012> <http://rdaregistry.info/Elements/t/P70012>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/t/P70012> <http://rdaregistry.info/Elements/c/C10010>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/t/P70012> <http://rdaregistry.info/Elements/c/C10008>)
+
+# Object Property: <http://rdaregistry.info/Elements/t/P70013> (has related corporate body (time-span))
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/t/P70013> <http://rdaregistry.info/Elements/t/object/relatedCorporateBodyTimespan.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/t/P70013> "relatedCorporateBodyTimespan"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/t/P70013> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/t/P70013> <http://rdaregistry.info/Elements/t/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/t/P70013> "has related corporate body (time-span)"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70013> <http://rdaregistry.info/Elements/t/P70006>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70013> <http://rdaregistry.info/Elements/t/P70013>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/t/P70013> <http://rdaregistry.info/Elements/c/C10010>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/t/P70013> <http://rdaregistry.info/Elements/c/C10005>)
+
+# Object Property: <http://rdaregistry.info/Elements/t/P70014> (is subject of (time-span))
+
+AnnotationAssertion(reg:lexicalAlias <http://rdaregistry.info/Elements/t/P70014> <http://rdaregistry.info/Elements/t/object/subjectOfTimespan.en>)
+AnnotationAssertion(reg:name <http://rdaregistry.info/Elements/t/P70014> "subjectOfTimespan"@en)
+AnnotationAssertion(reg:status <http://rdaregistry.info/Elements/t/P70014> <http://metadataregistry.org/uri/RegStatus/1001>)
+AnnotationAssertion(rdfs:isDefinedBy <http://rdaregistry.info/Elements/t/P70014> <http://rdaregistry.info/Elements/t/>)
+AnnotationAssertion(rdfs:label <http://rdaregistry.info/Elements/t/P70014> "is subject of (time-span)"@en)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70014> <http://rdaregistry.info/Elements/t/P70014>)
+SubObjectPropertyOf(<http://rdaregistry.info/Elements/t/P70014> <http://rdaregistry.info/Elements/x/object/P00014>)
+InverseObjectProperties(<http://rdaregistry.info/Elements/t/P70014> <http://rdaregistry.info/Elements/w/object/P10322>)
+ObjectPropertyDomain(<http://rdaregistry.info/Elements/t/P70014> <http://rdaregistry.info/Elements/c/C10010>)
+ObjectPropertyRange(<http://rdaregistry.info/Elements/t/P70014> <http://rdaregistry.info/Elements/c/C10001>)
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://metadataregistry.org/uri/RegStatus/1001> (<http://metadataregistry.org/uri/RegStatus/1001>)
+
+AnnotationAssertion(skos:prefLabel <http://metadataregistry.org/uri/RegStatus/1001> "Published"@en)
+ClassAssertion(skos:Concept <http://metadataregistry.org/uri/RegStatus/1001>)
+
+
+)

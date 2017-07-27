@@ -7,20 +7,19 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 
 
 Ontology(<http://imise.uni-leipzig.de/simpleanno/ontologies/rda/all>
+Import(<http://rdaregistry.info/Elements/a>)
 Import(<http://rdaregistry.info/Elements/c>)
+Import(<http://rdaregistry.info/Elements/e>)
+Import(<http://rdaregistry.info/Elements/i>)
+Import(<http://rdaregistry.info/Elements/m>)
+Import(<http://rdaregistry.info/Elements/n>)
+Import(<http://rdaregistry.info/Elements/p>)
 Import(<http://rdaregistry.info/Elements/rof>)
 Import(<http://rdaregistry.info/Elements/t>)
 Import(<http://rdaregistry.info/Elements/u>)
+Import(<http://rdaregistry.info/Elements/w>)
+Import(<http://rdaregistry.info/Elements/x>)
 Import(<http://rdaregistry.info/Elements/z>)
-Import(<http://rdaregistry.info/Elements/a/object>)
-Import(<http://rdaregistry.info/Elements/e/object>)
-Import(<http://rdaregistry.info/Elements/i/object>)
-Import(<http://rdaregistry.info/Elements/m/object>)
-Import(<http://rdaregistry.info/Elements/n/object>)
-Import(<http://rdaregistry.info/Elements/p/object>)
-Import(<http://rdaregistry.info/Elements/t/object>)
-Import(<http://rdaregistry.info/Elements/w/object>)
-Import(<http://rdaregistry.info/Elements/x/object>)
 
 
 
