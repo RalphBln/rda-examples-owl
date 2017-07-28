@@ -12,6 +12,7 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.simpleanno.org/mdo</Import>
     <Import>http://imise.uni-leipzig.de/simpleanno/ontologies/rda/all</Import>
     <Import>http://rimmf.com/vocab/</Import>
     <Import>file:/Users/ralph/Documents/Arbeit/SimpleAnno/Beispiele/rda-examples-owl/rda-xml/termList/ModeIssue.xml</Import>

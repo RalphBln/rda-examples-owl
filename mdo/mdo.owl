@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.simpleanno.org/mdo#"
+     xml:base="http://www.simpleanno.org/mdo"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.simpleanno.org/mdo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.simpleanno.org/mdo#ns -->
+
+    <owl:AnnotationProperty rdf:about="http://www.simpleanno.org/mdo#ns"/>
+    
+
+
+    <!-- http://www.simpleanno.org/mdo#url -->
+
+    <owl:AnnotationProperty rdf:about="http://www.simpleanno.org/mdo#url"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#has_part -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#has_part"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#has_value -->
+
+    <owl:ObjectProperty rdf:about="http://www.onto-med.de/ontologies/gfo.owl#has_value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontomedrisk.org/rio#has_data_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.ontomedrisk.org/rio#has_data_value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Property -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Property"/>
+    
+
+
+    <!-- http://www.onto-med.de/ontologies/gfo.owl#Property_value -->
+
+    <owl:Class rdf:about="http://www.onto-med.de/ontologies/gfo.owl#Property_value"/>
+    
+
+
+    <!-- http://www.ontomedrisk.org/rio#Composite_property -->
+
+    <owl:Class rdf:about="http://www.ontomedrisk.org/rio#Composite_property">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ontomedrisk.org/rio#Single_property -->
+
+    <owl:Class rdf:about="http://www.ontomedrisk.org/rio#Single_property">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpleanno.org/mdo#Complex_data_type -->
+
+    <owl:Class rdf:about="http://www.simpleanno.org/mdo#Complex_data_type"/>
+    
+
+
+    <!-- http://www.simpleanno.org/mdo#Conceptual_property -->
+
+    <owl:Class rdf:about="http://www.simpleanno.org/mdo#Conceptual_property">
+        <rdfs:subClassOf rdf:resource="http://www.ontomedrisk.org/rio#Single_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpleanno.org/mdo#External_conceptual_property -->
+
+    <owl:Class rdf:about="http://www.simpleanno.org/mdo#External_conceptual_property">
+        <rdfs:subClassOf rdf:resource="http://www.simpleanno.org/mdo#Conceptual_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpleanno.org/mdo#External_conceptual_value -->
+
+    <owl:Class rdf:about="http://www.simpleanno.org/mdo#External_conceptual_value">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Property_value"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpleanno.org/mdo#Internal_conceptual_property -->
+
+    <owl:Class rdf:about="http://www.simpleanno.org/mdo#Internal_conceptual_property">
+        <rdfs:subClassOf rdf:resource="http://www.simpleanno.org/mdo#Conceptual_property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpleanno.org/mdo#Internal_conceptual_value -->
+
+    <owl:Class rdf:about="http://www.simpleanno.org/mdo#Internal_conceptual_value">
+        <rdfs:subClassOf rdf:resource="http://www.onto-med.de/ontologies/gfo.owl#Property_value"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.simpleanno.org/mdo#MESH -->
+
+    <owl:Class rdf:about="http://www.simpleanno.org/mdo#MESH">
+        <rdfs:subClassOf rdf:resource="http://www.simpleanno.org/mdo#External_conceptual_value"/>
+        <ns>https://www.ncbi.nlm.nih.gov/mesh/</ns>
+        <url>https://www.ncbi.nlm.nih.gov/mesh/</url>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.5.20160517-0735) https://github.com/owlcs/owlapi -->
+
