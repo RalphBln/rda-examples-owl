@@ -13,6 +13,83 @@
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://imise.uni-leipzig.de/simpleanno/ontologies/rda/all</Import>
+    <Import>http://rimmf.com/vocab/</Import>
+    <Import>file:/Users/ralph/Documents/Arbeit/SimpleAnno/Beispiele/rda-examples-owl/rda-xml/termList/ModeIssue.xml</Import>
+    <Declaration>
+        <NamedIndividual IRI="#simpleanno00000016"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://rimmf.com/vocab/hasAapComponentFlag"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://rimmf.com/vocab/rimmfIdentifierManifestation"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="http://rdaregistry.info/Elements/c/C10007"/>
+        <NamedIndividual IRI="#simpleanno00000016"/>
+    </ClassAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <IRI>#simpleanno00000016</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Ralph Schäfermeier</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://rdaregistry.info/Elements/m/P30003"/>
+        <IRI>#simpleanno00000016</IRI>
+        <IRI>http://rdaregistry.info/termList/ModeIssue/1003</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://rdaregistry.info/Elements/m/P30014"/>
+        <IRI>#simpleanno00000016</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">2015;23(3)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://rdaregistry.info/Elements/m/P30134"/>
+        <IRI>#simpleanno00000016</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Periimplantitis und Keramikimplantate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://rdaregistry.info/Elements/m/P30142"/>
+        <IRI>#simpleanno00000016</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Erste klinische Beobachtungen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://rdaregistry.info/Elements/m/P30143"/>
+        <IRI>#simpleanno00000016</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Die Zeitschrift für die Praxis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty IRI="http://rimmf.com/vocab/hasAapComponentFlag"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
+        </Annotation>
+        <AnnotationProperty IRI="http://rdaregistry.info/Elements/m/P30156"/>
+        <IRI>#simpleanno00000016</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Periimplantitis und Keramikimplantate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://rdaregistry.info/Elements/m/P30157"/>
+        <IRI>#simpleanno00000016</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Implantologie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://rdaregistry.info/Elements/m/P30166"/>
+        <IRI>#simpleanno00000016</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">0943-9692</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://rimmf.com/vocab/rimmfIdentifierManifestation"/>
+        <IRI>#simpleanno00000016</IRI>
+        <IRI>#simpleanno00000016</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#simpleanno00000016</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Periimplantitis und Keramikimplantate. Online resource</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
