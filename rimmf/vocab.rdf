@@ -1,0 +1,1161 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdakit="http://metadataregistry.org/uri/profile/rdakit/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:reg="http://metadataregistry.org/uri/profile/RegAp/"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:status="http://metadataregistry.org/uri/RegStatus/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://rimmf.com/vocab"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/identifier"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#note -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#note"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/">
+        <dc:title xml:lang="en">RIMMF elements</dc:title>
+        <skos:definition xml:lang="en">Contains elements needed by the RIMMF application to support its implementation of RDA.</skos:definition>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/CustomEntity1">
+        <dct:identifier>R1039</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">customentity1</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in CustomEntity1 entity records.</skos:scopeNote>
+        <dct:identifier>15001</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/CustomEntity2">
+        <skos:scopeNote xml:lang="en">This element is intended for use in CustomEntity2 entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">customentity2</rdfs:label>
+        <dct:identifier>15101</dct:identifier>
+        <dct:identifier>R1040</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/CustomEntity3">
+        <skos:scopeNote xml:lang="en">This element is intended for use in CustomEntity3 entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">customentity3</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>15201</dct:identifier>
+        <dct:identifier>R1041</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/CustomEntity4">
+        <rdfs:label xml:lang="en">customentity4</rdfs:label>
+        <dct:identifier>R1042</dct:identifier>
+        <dct:identifier>15301</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/OtherElement">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has other class ?</rdfs:label>
+        <skos:definition xml:lang="en">An element that is not defined by either the RDA Registry or RIMMF</skos:definition>
+        <dct:identifier>10004</dct:identifier>
+        <dct:identifier>R1004</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/RdaElement">
+        <dct:identifier>R1003</dct:identifier>
+        <dct:identifier>10003</dct:identifier>
+        <rdfs:label xml:lang="en">0</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/RdaEntity">
+        <skos:definition xml:lang="en">Classes derived from RDA entities based on FRBR and FRAD entities.</skos:definition>
+        <dct:identifier>R1002</dct:identifier>
+        <dct:identifier>10002</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">rda classes ?</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/RdaWemi">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:definition xml:lang="en">Deprecated--Not used in RIMMF3</skos:definition>
+        <rdfs:label xml:lang="en">0</rdfs:label>
+        <dct:identifier>10005</dct:identifier>
+        <dct:identifier>R1005</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/RimmfClass">
+        <skos:definition xml:lang="en">A container for non-RDA elements required by the RIMMF application</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>R1006</dct:identifier>
+        <dct:identifier>10006</dct:identifier>
+        <rdfs:label xml:lang="en">RIMMF class ?</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/attributesForDescribingCarriersForTheItem">
+        <dct:identifier>R1123</dct:identifier>
+        <rdfs:label xml:lang="en">has attributes for describing carriers</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <dct:identifier>25184</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/attributesForDescribingCarriersForTheManifestation">
+        <dct:identifier>25179</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <dct:identifier>R1118</dct:identifier>
+        <rdfs:label xml:lang="en">has attributes for describing carriers</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/attributesForDescribingContentOfTheExpression">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has attributes for describing content</rdfs:label>
+        <dct:identifier>25106</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Expression entity records.</skos:scopeNote>
+        <dct:identifier>R1108</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/attributesForDescribingContentOfTheWork">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Work entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has attributes for describing content</rdfs:label>
+        <dct:identifier>25004</dct:identifier>
+        <dct:identifier>R1104</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/attributesForIdentifyingTheCorporateBody">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in CorporateBody entity records.</skos:scopeNote>
+        <dct:identifier>25326</dct:identifier>
+        <dct:identifier>R1131</dct:identifier>
+        <rdfs:label xml:lang="en">has attributes for identifying the corporate body</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/attributesForIdentifyingTheExpression">
+        <rdfs:label xml:lang="en">has attributes for identifying the expression</rdfs:label>
+        <dct:identifier>25105</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Expression entity records.</skos:scopeNote>
+        <dct:identifier>R1107</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/attributesForIdentifyingTheFamily">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has attributes for identifying the family</rdfs:label>
+        <dct:identifier>25130</dct:identifier>
+        <dct:identifier>R1110</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Family entity records.</skos:scopeNote>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/attributesForIdentifyingTheItem">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>25183</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has attributes for identifying the item</rdfs:label>
+        <dct:identifier>R1122</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/attributesForIdentifyingTheManifestation">
+        <dct:identifier>R1117</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has attributes for identifying the manifestation</rdfs:label>
+        <dct:identifier>25178</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/attributesForIdentifyingThePerson">
+        <dct:identifier>25133</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has attributes for identifying the person</rdfs:label>
+        <dct:identifier>R1113</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Person entity records.</skos:scopeNote>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/attributesForIdentifyingTheWork">
+        <dct:identifier>25003</dct:identifier>
+        <dct:identifier>R1103</dct:identifier>
+        <rdfs:label xml:lang="en">has attributes for identifying the work</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Work entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/attributesForProvidingAcquisitionAndAccessInformationItem">
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <dct:identifier>R1124</dct:identifier>
+        <dct:identifier>25185</dct:identifier>
+        <rdfs:label xml:lang="en">has attributes for providing acquisition and access information</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/attributesForProvidingAcquisitionAndAccessInformationManifestation">
+        <dct:identifier>25180</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <dct:identifier>R1119</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has attributes for providing acquisition and access information</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/authorizedAccessPoint">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has authorized access point</rdfs:label>
+        <dct:identifier>21148</dct:identifier>
+        <skos:definition xml:lang="en">The standardized access point representing a resource</skos:definition>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 6.27.1 ; 6.27.1.9 of the RDA Toolkit.</skos:note>
+        <dct:identifier>R1094</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/authorizedAccessPointCorporateBody">
+        <skos:scopeNote xml:lang="en">This element is intended for use in CorporateBody entity records.</skos:scopeNote>
+        <dct:identifier>R1083</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 11.13 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:definition xml:lang="en">The standardized access point representing an Corporate Body</skos:definition>
+        <dct:identifier>21124</dct:identifier>
+        <rdfs:label xml:lang="en">has authorized access point</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/authorizedAccessPointExpression">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>R1043</dct:identifier>
+        <skos:definition xml:lang="en">The standardized access point representing an Expression</skos:definition>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 6.27.3 of the RDA Toolkit.</skos:note>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Expression entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has authorized access point</rdfs:label>
+        <dct:identifier>21018</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/authorizedAccessPointFamily">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:definition xml:lang="en">The standardized access point representing an Family</skos:definition>
+        <dct:identifier>21122</dct:identifier>
+        <rdfs:label xml:lang="en">has authorized access point</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Family entity records.</skos:scopeNote>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 10.11 of the RDA Toolkit.</skos:note>
+        <dct:identifier>R1081</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/authorizedAccessPointPerson">
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 9.19 of the RDA Toolkit.</skos:note>
+        <rdfs:label xml:lang="en">has authorized access point</rdfs:label>
+        <dct:identifier>R1079</dct:identifier>
+        <skos:definition xml:lang="en">The standardized access point representing an Person</skos:definition>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Person entity records.</skos:scopeNote>
+        <dct:identifier>21120</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/authorizedAccessPointPlace">
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 16.4.1 of the RDA Toolkit.</skos:note>
+        <dct:identifier>21158</dct:identifier>
+        <dct:identifier>R1136</dct:identifier>
+        <rdfs:label xml:lang="en">has authorized access point</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Place entity records.</skos:scopeNote>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/authorizedAccessPointWork">
+        <dct:identifier>R1044</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 6.27.1 ; 6.27.1.9 of the RDA Toolkit.</skos:note>
+        <rdfs:label xml:lang="en">has authorized access point</rdfs:label>
+        <skos:definition xml:lang="en">The standardized access point representing an Work</skos:definition>
+        <dct:identifier>21019</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Work entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/cataloguersNoteCorporateBody">
+        <dct:identifier>R1017</dct:identifier>
+        <rdfs:label xml:lang="en">has cataloguer&apos;s note</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in CorporateBody entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:definition xml:lang="en">An annotation that might be helpful to those using or revising the relationship data, or creating an authorized access point representing a related entity</skos:definition>
+        <dct:identifier>11031</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 8.13 of the RDA Toolkit.</skos:note>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/cataloguersNoteExpression">
+        <rdfs:label xml:lang="en">has cataloguer&apos;s note</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>R1021</dct:identifier>
+        <skos:definition xml:lang="en">An annotation that might be helpful to those using or revising the relationship data, or creating an authorized access point representing a related entity</skos:definition>
+        <dct:identifier>11101</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Expression entity records.</skos:scopeNote>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 5.9 of the RDA Toolkit.</skos:note>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/cataloguersNoteFamily">
+        <dct:identifier>R1023</dct:identifier>
+        <skos:definition xml:lang="en">An annotation that might be helpful to those using or revising the relationship data, or creating an authorized access point representing a related entity</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Family entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has cataloguer&apos;s note</rdfs:label>
+        <dct:identifier>11148</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 8.13 of the RDA Toolkit.</skos:note>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/cataloguersNotePerson">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 8.13 of the RDA Toolkit.</skos:note>
+        <skos:definition xml:lang="en">An annotation that might be helpful to those using or revising the relationship data, or creating an authorized access point representing a related entity</skos:definition>
+        <dct:identifier>11410</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Person entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has cataloguer&apos;s note</rdfs:label>
+        <dct:identifier>R1030</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/cataloguersNoteWork">
+        <rdfs:label xml:lang="en">has cataloguer&apos;s note</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Work entity records.</skos:scopeNote>
+        <skos:definition xml:lang="en">An annotation that might be helpful to those using or revising the relationship data, or creating an authorized access point representing a related entity</skos:definition>
+        <dct:identifier>R1033</dct:identifier>
+        <dct:identifier>11479</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 5.9 ; 24.8 of the RDA Toolkit.</skos:note>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/contactInformationItem">
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 4.3 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>21031</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <dct:identifier>R1045</dct:identifier>
+        <rdfs:label xml:lang="en">has contact information</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/dateOfUsagePerson">
+        <rdfs:label xml:lang="en">has date of usage</rdfs:label>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 8.9 of the RDA Toolkit.</skos:note>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Person entity records.</skos:scopeNote>
+        <dct:identifier>11634</dct:identifier>
+        <dct:identifier>R1038</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/descriptionItem">
+        <dct:identifier>R1086</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has composite key</rdfs:label>
+        <dct:identifier>21136</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <skos:definition xml:lang="en">A set of data recording and identifying an Item</skos:definition>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/descriptionManifestation">
+        <dct:identifier>21135</dct:identifier>
+        <rdfs:label xml:lang="en">has composite key</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <skos:definition xml:lang="en">A set of data recording and identifying a Manifestation</skos:definition>
+        <dct:identifier>R1085</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/descriptionRelatedWork">
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 24.4.3 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Work entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has description (related work) !</rdfs:label>
+        <dct:identifier>21035</dct:identifier>
+        <dct:identifier>R1046</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/detailsOfBaseMaterialForMicrofilmMicrofichePhotographicFilmAndMotionPictureFilm">
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.6.2.4 of the RDA Toolkit.</skos:note>
+        <rdfs:label xml:lang="en">has details of base material for microfilm, microfiche, photographic film, and motion picture film !</rdfs:label>
+        <skos:definition xml:lang="en">has details of base material for microfilm, microfiche, photographic film, and motion picture film ! considered important for identification or selection</skos:definition>
+        <dct:identifier>R1034</dct:identifier>
+        <dct:identifier>11583</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/dimensionsItem">
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.5 of the RDA Toolkit.</skos:note>
+        <rdfs:label xml:lang="en">has dimensions of item</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>11182</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <dct:identifier>R1027</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/dimensionsOfMapEtc">
+        <dct:identifier>R1047</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <dct:identifier>21036</dct:identifier>
+        <rdfs:label xml:lang="en">has dimensions of map, etc. of item</rdfs:label>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.5.2 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/dimensionsOfStillImage">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>21037</dct:identifier>
+        <dct:identifier>R1048</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has dimensions of still image of item</rdfs:label>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.5.3 of the RDA Toolkit.</skos:note>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/extentItem">
+        <dct:identifier>R1028</dct:identifier>
+        <rdfs:label xml:lang="en">has extent of item</rdfs:label>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4 of the RDA Toolkit.</skos:note>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <dct:identifier>11184</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/extentOfCartographicResourceItem">
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.2 of the RDA Toolkit.</skos:note>
+        <dct:identifier>21040</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has extent of cartographic resource (item)</rdfs:label>
+        <dct:identifier>R1049</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/extentOfNotatedMusicItem">
+        <dct:identifier>R1050</dct:identifier>
+        <rdfs:label xml:lang="en">has extent of notated music (item)</rdfs:label>
+        <dct:identifier>21041</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.3 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/extentOfStillImageItem">
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has extent of still image (item)</rdfs:label>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.4 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>21042</dct:identifier>
+        <dct:identifier>R1051</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/extentOfTextItem">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has extent of text (item)</rdfs:label>
+        <dct:identifier>R1052</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.5 of the RDA Toolkit.</skos:note>
+        <dct:identifier>21043</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/extentOfThreeDimensionalFormItem">
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.6 of the RDA Toolkit.</skos:note>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <dct:identifier>21044</dct:identifier>
+        <dct:identifier>R1053</dct:identifier>
+        <rdfs:label xml:lang="en">has extent of three-dimensional form (item)</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/extentStatement">
+        <dct:identifier>R1063</dct:identifier>
+        <rdfs:label xml:lang="en">has extent statement</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <skos:definition xml:lang="en">Relates a manifestation to the number and type of units and/or subunits making up the manifestation</skos:definition>
+        <dct:identifier>21091</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4 of the RDA Toolkit.</skos:note>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/frbrOoClass">
+        <dct:identifier>R1133</dct:identifier>
+        <dct:identifier>30880</dct:identifier>
+        <skos:definition xml:lang="en">Exploratory, not intended for general use</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has frbroo class</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/identifierAssigner">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 2.15 of the RDA Toolkit.</skos:note>
+        <dct:identifier>R1099</dct:identifier>
+        <dct:identifier>21154</dct:identifier>
+        <skos:definition xml:lang="en">From bibframe.org</skos:definition>
+        <rdfs:label xml:lang="en">has identifier assigner</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/identifierForThePlace">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 16.3 of the RDA Toolkit.</skos:note>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Place entity records.</skos:scopeNote>
+        <dct:identifier>R1138</dct:identifier>
+        <rdfs:label xml:lang="en">has identifier for the place</rdfs:label>
+        <dct:identifier>21160</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/identifierQualifier">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has identifier qualifier</rdfs:label>
+        <skos:definition xml:lang="en">From bibframe.org</skos:definition>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 2.15.1.5 ; 2.15.1.7 of the RDA Toolkit.</skos:note>
+        <dct:identifier>21155</dct:identifier>
+        <dct:identifier>R1100</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/identifierScheme">
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 2.15 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has identifier type</rdfs:label>
+        <dct:identifier>21153</dct:identifier>
+        <skos:definition xml:lang="en">From bibframe.org</skos:definition>
+        <dct:identifier>R1098</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/identifierStatus">
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 2.15.1.6 of the RDA Toolkit.</skos:note>
+        <dct:identifier>R1101</dct:identifier>
+        <dct:identifier>21156</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:definition xml:lang="en">From bibframe.org</skos:definition>
+        <rdfs:label xml:lang="en">has identifier status</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/identifierValue">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has identifier value</rdfs:label>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 2.15 of the RDA Toolkit.</skos:note>
+        <skos:definition xml:lang="en">From bibframe.org</skos:definition>
+        <dct:identifier>R1097</dct:identifier>
+        <dct:identifier>21152</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/itemNoteItem">
+        <dct:identifier>21088</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.22 of the RDA Toolkit.</skos:note>
+        <dct:identifier>R1061</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has note !</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/metadataAboutCorporateBodyData">
+        <dct:identifier>R1130</dct:identifier>
+        <rdfs:label xml:lang="en">has metadata about corporate body data</rdfs:label>
+        <dct:identifier>25325</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in CorporateBody entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/metadataAboutExpressionData">
+        <skos:scopeNote xml:lang="en">This element is intended for use in Expression entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has metadata about expression data</rdfs:label>
+        <dct:identifier>R1106</dct:identifier>
+        <dct:identifier>25104</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/metadataAboutFamilyData">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Family entity records.</skos:scopeNote>
+        <dct:identifier>R1109</dct:identifier>
+        <rdfs:label xml:lang="en">has metadata about family data</rdfs:label>
+        <dct:identifier>25129</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/metadataAboutItemData">
+        <dct:identifier>25182</dct:identifier>
+        <rdfs:label xml:lang="en">has metadata about item data</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <dct:identifier>R1121</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/metadataAboutManifestationData">
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>25177</dct:identifier>
+        <rdfs:label xml:lang="en">has metadata about manifestation data</rdfs:label>
+        <dct:identifier>R1116</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/metadataAboutPersonData">
+        <rdfs:label xml:lang="en">has metadata about person data</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Person entity records.</skos:scopeNote>
+        <dct:identifier>25132</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>R1112</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/metadataAboutWorkData">
+        <dct:identifier>R1102</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Work entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has metadata about work data</rdfs:label>
+        <dct:identifier>25002</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/numberOfSubunits">
+        <rdfs:label xml:lang="en">has number of subunits</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.1.7 of the RDA Toolkit.</skos:note>
+        <dct:identifier>21093</dct:identifier>
+        <skos:definition xml:lang="en">has number of subunits considered important for identification or selection</skos:definition>
+        <dct:identifier>R1065</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/numberOfUnits">
+        <rdfs:label xml:lang="en">has number of units</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <dct:identifier>R1062</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.1.3 of the RDA Toolkit.</skos:note>
+        <dct:identifier>21089</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/preferredCitationItem">
+        <dct:identifier>R1029</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 2.16 of the RDA Toolkit.</skos:note>
+        <rdfs:label xml:lang="en">has preferred citation of item</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <dct:identifier>11195</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rdaRegistryVersionUsed">
+        <skos:definition xml:lang="en">The RDA Registry version of the elements being used</skos:definition>
+        <dct:identifier>R1096</dct:identifier>
+        <dct:identifier>21151</dct:identifier>
+        <rdfs:label xml:lang="en">has rda registry version used ?</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/relationshipAgentToExpression">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has related expression</rdfs:label>
+        <dct:identifier>R1127</dct:identifier>
+        <dct:identifier>25188</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/relationshipAgentToItem">
+        <dct:identifier>R1129</dct:identifier>
+        <dct:identifier>25190</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has related item</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/relationshipAgentToManifestation">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has related manifestation</rdfs:label>
+        <dct:identifier>25189</dct:identifier>
+        <dct:identifier>R1128</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/relationshipAgentToWork">
+        <rdfs:label xml:lang="en">has related work</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>25187</dct:identifier>
+        <dct:identifier>R1126</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/relationshipsCorporateBody">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has relationships</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in CorporateBody entity records.</skos:scopeNote>
+        <dct:identifier>R1132</dct:identifier>
+        <dct:identifier>25327</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/relationshipsExpression">
+        <dct:identifier>R1115</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>25175</dct:identifier>
+        <rdfs:label xml:lang="en">has relationships</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Expression entity records.</skos:scopeNote>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/relationshipsFamily">
+        <rdfs:label xml:lang="en">has relationships</rdfs:label>
+        <dct:identifier>25131</dct:identifier>
+        <dct:identifier>R1111</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Family entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/relationshipsItem">
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has relationships</rdfs:label>
+        <dct:identifier>R1125</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>25186</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/relationshipsManifestation">
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>R1120</dct:identifier>
+        <rdfs:label xml:lang="en">has relationships</rdfs:label>
+        <dct:identifier>25181</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/relationshipsPerson">
+        <rdfs:label xml:lang="en">has relationships</rdfs:label>
+        <dct:identifier>R1114</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Person entity records.</skos:scopeNote>
+        <dct:identifier>25134</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/relationshipsWork">
+        <dct:identifier>R1105</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Work entity records.</skos:scopeNote>
+        <dct:identifier>25005</dct:identifier>
+        <rdfs:label xml:lang="en">has relationships</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfAapComponentSeqNum">
+        <dct:identifier>R1134</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has aap component sequence number ?</rdfs:label>
+        <skos:definition xml:lang="en">Internal to the RIMMF application</skos:definition>
+        <dct:identifier>21080</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfHeaderDataCount">
+        <dct:identifier>10105</dct:identifier>
+        <skos:definition xml:lang="en">Internal to the RIMMF application</skos:definition>
+        <dct:identifier>R1011</dct:identifier>
+        <rdfs:label xml:lang="en">has data count ?</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfHeaderEntityId">
+        <rdfs:label xml:lang="en">has entity id ?</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>10104</dct:identifier>
+        <dct:identifier>R1010</dct:identifier>
+        <skos:definition xml:lang="en">Internal to the RIMMF application</skos:definition>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfHeaderMarcSourcefile">
+        <rdfs:label xml:lang="en">has marc source file ?</rdfs:label>
+        <skos:definition xml:lang="en">Internal to the RIMMF application (currently using dcterms:modified for this in RDF export)</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>R1016</dct:identifier>
+        <dct:identifier>10110</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfHeaderRemoteUri">
+        <dct:identifier>R1014</dct:identifier>
+        <rdfs:label xml:lang="en">has remote uri ?</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:definition xml:lang="en">Internal to the RIMMF application</skos:definition>
+        <dct:identifier>10108</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfHeaderTplCols">
+        <skos:definition xml:lang="en">Internal to the RIMMF application</skos:definition>
+        <rdfs:label xml:lang="en">has template columns ?</rdfs:label>
+        <dct:identifier>R1013</dct:identifier>
+        <dct:identifier>10107</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfHeaderTplFlag">
+        <rdfs:label xml:lang="en">has template flag ?</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:definition xml:lang="en">Internal to the RIMMF application</skos:definition>
+        <dct:identifier>10106</dct:identifier>
+        <dct:identifier>R1012</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfHeaderUniqueId">
+        <dct:identifier>10103</dct:identifier>
+        <skos:definition xml:lang="en">Internal to the RIMMF application</skos:definition>
+        <dct:identifier>R1009</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has unique id ?</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfHeaderVersion">
+        <dct:identifier>R1007</dct:identifier>
+        <rdfs:label xml:lang="en">has RIMMF version ?</rdfs:label>
+        <skos:definition xml:lang="en">Internal to the RIMMF application</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>10101</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfIdentifier">
+        <dct:identifier>R1095</dct:identifier>
+        <dct:identifier>21150</dct:identifier>
+        <skos:definition xml:lang="en">The unique local identifier used by the RIMMF application for a resource</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has RIMMF identifier</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfIdentifierCorporateBody">
+        <dct:identifier>R1054</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in CorporateBody entity records.</skos:scopeNote>
+        <skos:definition xml:lang="en">The unique local identifier used by the RIMMF application for a Corporate Body entity record</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>21050</dct:identifier>
+        <rdfs:label xml:lang="en">has RIMMF identifier</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfIdentifierExpression">
+        <rdfs:label xml:lang="en">has RIMMF identifier</rdfs:label>
+        <dct:identifier>21058</dct:identifier>
+        <skos:definition xml:lang="en">The unique local identifier used by the RIMMF application for an Expression entity record</skos:definition>
+        <dct:identifier>R1055</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Expression entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfIdentifierFamily">
+        <skos:definition xml:lang="en">The unique local identifier used by the RIMMF application for a Family entity record</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Family entity records.</skos:scopeNote>
+        <dct:identifier>R1056</dct:identifier>
+        <rdfs:label xml:lang="en">has RIMMF identifier</rdfs:label>
+        <dct:identifier>21060</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfIdentifierItem">
+        <dct:identifier>R1057</dct:identifier>
+        <skos:definition xml:lang="en">The unique local identifier used by the RIMMF application for an Item entity record</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>21062</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has RIMMF identifier</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfIdentifierManifestation">
+        <skos:definition xml:lang="en">The unique local identifier used by the RIMMF application for a Manifestation entity record</skos:definition>
+        <dct:identifier>R1058</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>21063</dct:identifier>
+        <rdfs:label xml:lang="en">has RIMMF identifier</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfIdentifierPerson">
+        <dct:identifier>R1059</dct:identifier>
+        <skos:definition xml:lang="en">The unique local identifier used by the RIMMF application for a Person entity record</skos:definition>
+        <rdfs:label xml:lang="en">has RIMMF identifier</rdfs:label>
+        <dct:identifier>21071</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Person entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfIdentifierPlace">
+        <skos:scopeNote xml:lang="en">This element is intended for use in Place entity records.</skos:scopeNote>
+        <skos:definition xml:lang="en">The unique local identifier used by the RIMMF application for a Place entity record</skos:definition>
+        <dct:identifier>R1139</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has RIMMF identifier</rdfs:label>
+        <dct:identifier>21161</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfIdentifierWork">
+        <dct:identifier>R1060</dct:identifier>
+        <skos:definition xml:lang="en">The unique local identifier used by the RIMMF application for a Work entity record</skos:definition>
+        <rdfs:label xml:lang="en">has RIMMF identifier</rdfs:label>
+        <dct:identifier>21079</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Work entity records.</skos:scopeNote>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfResourceCreated">
+        <dct:identifier>10102</dct:identifier>
+        <rdfs:label xml:lang="en">has entity record creation date ?</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>R1008</dct:identifier>
+        <skos:definition xml:lang="en">Relates an entity record to the date and time it was created in the RIMMF application</skos:definition>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfResourceLastModTime">
+        <dct:identifier>10109</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:definition xml:lang="en">Relates an entity record to the date and time it waslast modified in the RIMMF application</skos:definition>
+        <rdfs:label xml:lang="en">has entity record last mod time ?</rdfs:label>
+        <dct:identifier>R1015</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/rimmfRootNode">
+        <skos:definition xml:lang="en">Virtual parent of all elements (required internally by the user interface)</skos:definition>
+        <rdfs:label xml:lang="en">0</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>R1001</dct:identifier>
+        <dct:identifier>10001</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/scopeOfUsageCorporateBody">
+        <rdfs:label xml:lang="en">has scope of usage (corporate body)</rdfs:label>
+        <skos:definition xml:lang="en">The type or form of work associated with the name chosen as the preferred name for a person, family, or corporate body</skos:definition>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 8.8 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in CorporateBody entity records.</skos:scopeNote>
+        <dct:identifier>11633</dct:identifier>
+        <dct:identifier>R1037</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/scopeOfUsageFamily">
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 8.8 of the RDA Toolkit.</skos:note>
+        <dct:identifier>11632</dct:identifier>
+        <rdfs:label xml:lang="en">has scope of usage (family)</rdfs:label>
+        <skos:definition xml:lang="en">The type or form of work associated with the name chosen as the preferred name for a person, family, or corporate body</skos:definition>
+        <dct:identifier>R1036</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Family entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/scopeOfUsagePerson">
+        <dct:identifier>11631</dct:identifier>
+        <dct:identifier>R1035</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 8.8 of the RDA Toolkit.</skos:note>
+        <skos:definition xml:lang="en">The type or form of work associated with the name chosen as the preferred name for a person, family, or corporate body</skos:definition>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Person entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has scope of usage (person)</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/sourceConsultedCorporateBody">
+        <rdfs:label xml:lang="en">has source consulted</rdfs:label>
+        <skos:definition xml:lang="en">A resource used in determining the name or other identifying attributes of a Corporate Body</skos:definition>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 8.12 of the RDA Toolkit.</skos:note>
+        <skos:scopeNote xml:lang="en">This element is intended for use in CorporateBody entity records.</skos:scopeNote>
+        <dct:identifier>11060</dct:identifier>
+        <dct:identifier>R1018</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/sourceConsultedExpression">
+        <rdfs:label xml:lang="en">has source consulted</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Expression entity records.</skos:scopeNote>
+        <skos:definition xml:lang="en">A resource used in determining the name, title, or other identifying attributes of an Expression, or in determining the relationship between entities</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 5.8 of the RDA Toolkit.</skos:note>
+        <dct:identifier>R1071</dct:identifier>
+        <dct:identifier>21104</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/sourceConsultedFamily">
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 8.12 of the RDA Toolkit.</skos:note>
+        <skos:definition xml:lang="en">A resource used in determining the name or other identifying attributes of a Corporate Body</skos:definition>
+        <dct:identifier>11170</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Family entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has source consulted</rdfs:label>
+        <dct:identifier>R1024</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/sourceConsultedPerson">
+        <skos:scopeNote xml:lang="en">This element is intended for use in Person entity records.</skos:scopeNote>
+        <dct:identifier>R1031</dct:identifier>
+        <dct:identifier>11441</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 8.12 of the RDA Toolkit.</skos:note>
+        <skos:definition xml:lang="en">A resource used in determining the name or other identifying attributes of a Corporate Body</skos:definition>
+        <rdfs:label xml:lang="en">has source consulted</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/sourceConsultedWork">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 5.8 ; 24.7= of the RDA Toolkit.</skos:note>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Work entity records.</skos:scopeNote>
+        <dct:identifier>21109</dct:identifier>
+        <skos:definition xml:lang="en">A resource used in determining the name, title, or other identifying attributes of a Work, or in determining the relationship between entities</skos:definition>
+        <rdfs:label xml:lang="en">has source consulted</rdfs:label>
+        <dct:identifier>R1072</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/statusOfIdentificationCorporateBody">
+        <rdfs:label xml:lang="en">has status of identification</rdfs:label>
+        <dct:identifier>11064</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in CorporateBody entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:definition xml:lang="en">An indication of the level of authentication of the data identifying a Corporate Body</skos:definition>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 8.10 of the RDA Toolkit.</skos:note>
+        <dct:identifier>R1019</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/statusOfIdentificationExpression">
+        <skos:definition xml:lang="en">An indication of the level of authentication of the data identifying an Expression</skos:definition>
+        <dct:identifier>R1073</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Expression entity records.</skos:scopeNote>
+        <dct:identifier>21112</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 5.7.1 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has status of identification</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/statusOfIdentificationFamily">
+        <dct:identifier>R1025</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Family entity records.</skos:scopeNote>
+        <dct:identifier>11174</dct:identifier>
+        <rdfs:label xml:lang="en">has status of identification</rdfs:label>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 8.10 of the RDA Toolkit.</skos:note>
+        <skos:definition xml:lang="en">An indication of the level of authentication of the data identifying a Family</skos:definition>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/statusOfIdentificationPerson">
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 8.10 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>R1032</dct:identifier>
+        <rdfs:label xml:lang="en">has status of identification</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Person entity records.</skos:scopeNote>
+        <dct:identifier>11445</dct:identifier>
+        <skos:definition xml:lang="en">An indication of the level of authentication of the data identifying a Person</skos:definition>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/statusOfIdentificationWork">
+        <dct:identifier>21113</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 5.7.1 of the RDA Toolkit.</skos:note>
+        <rdfs:label xml:lang="en">has status of identification</rdfs:label>
+        <skos:definition xml:lang="en">An indication of the level of authentication of the data identifying a Work</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>R1074</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Work entity records.</skos:scopeNote>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/technique">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>11144</dct:identifier>
+        <dct:identifier>R1022</dct:identifier>
+        <rdfs:label xml:lang="en">has technique !</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Expression entity records.</skos:scopeNote>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/termsOfAvailabilityItem">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 4.2 of the RDA Toolkit.</skos:note>
+        <dct:identifier>R1075</dct:identifier>
+        <rdfs:label xml:lang="en">has terms of availability</rdfs:label>
+        <dct:identifier>21114</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/titleAndResponsibilityStatement">
+        <dct:identifier>R1135</dct:identifier>
+        <dct:identifier>21157</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 2.3 ; 2.4 of the RDA Toolkit.</skos:note>
+        <rdfs:label xml:lang="en">has title and responsibility statement !</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/typeOfSubunit3DForm">
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.6 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <dct:identifier>R1092</dct:identifier>
+        <dct:identifier>21146</dct:identifier>
+        <rdfs:label xml:lang="en">has type of subunit (3d form)</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/typeOfSubunitCartographic">
+        <dct:identifier>21144</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.2 of the RDA Toolkit.</skos:note>
+        <rdfs:label xml:lang="en">has type of subunit (cartographic)</rdfs:label>
+        <dct:identifier>R1090</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/typeOfSubunitNotatedMusic">
+        <rdfs:label xml:lang="en">has type of subunit (notated music)</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>R1091</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.3 of the RDA Toolkit.</skos:note>
+        <dct:identifier>21145</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/typeOfSubunitOther">
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.1.7 of the RDA Toolkit.</skos:note>
+        <rdfs:label xml:lang="en">has type of subunit (other)</rdfs:label>
+        <dct:identifier>21141</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>R1087</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/typeOfSubunitStillImage">
+        <rdfs:label xml:lang="en">has type of subunit (still image)</rdfs:label>
+        <dct:identifier>21143</dct:identifier>
+        <dct:identifier>R1089</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/typeOfSubunitText">
+        <dct:identifier>21142</dct:identifier>
+        <dct:identifier>R1088</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.5 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has type of subunit (text)</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/typeOfUnit3DForm">
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.6 of the RDA Toolkit.</skos:note>
+        <dct:identifier>21099</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>R1070</dct:identifier>
+        <rdfs:label xml:lang="en">has type of unit (3d form)</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/typeOfUnitCartographic">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has type of unit (cartographic)</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.2 of the RDA Toolkit.</skos:note>
+        <dct:identifier>21097</dct:identifier>
+        <dct:identifier>R1068</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/typeOfUnitNotatedMusic">
+        <rdfs:label xml:lang="en">has type of unit (notated music)</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>21098</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.3 of the RDA Toolkit.</skos:note>
+        <dct:identifier>R1069</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/typeOfUnitOther">
+        <dct:identifier>R1064</dct:identifier>
+        <dct:identifier>21092</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.1 of the RDA Toolkit.</skos:note>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has type of unit (other)</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/typeOfUnitStillImage">
+        <rdfs:label xml:lang="en">has type of unit (still image)</rdfs:label>
+        <dct:identifier>21096</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <dct:identifier>R1067</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/typeOfUnitText">
+        <dct:identifier>21095</dct:identifier>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 3.4.5 of the RDA Toolkit.</skos:note>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Manifestation entity records.</skos:scopeNote>
+        <dct:identifier>R1066</dct:identifier>
+        <rdfs:label xml:lang="en">has type of unit (text)</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/undifferentiatedNameIndicatorCorporateBody">
+        <skos:definition xml:lang="en">A categorization indicating that the core elements recorded are insufficient to differentiate between two or more corporate bodies with the same name</skos:definition>
+        <skos:scopeNote xml:lang="en">This element is intended for use in CorporateBody entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has undifferentiated name indicator (corporate body)</rdfs:label>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 8.11 of the RDA Toolkit.</skos:note>
+        <dct:identifier>R1020</dct:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>11065</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/undifferentiatedNameIndicatorFamily">
+        <dct:identifier>R1026</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Family entity records.</skos:scopeNote>
+        <rdfs:label xml:lang="en">has undifferentiated name indicator (family)</rdfs:label>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 8.11 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>11176</dct:identifier>
+        <skos:definition xml:lang="en">A categorization indicating that the core elements recorded are insufficient to differentiate between two or more families with the same name</skos:definition>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/uniformResourceLocatorItem">
+        <skos:scopeNote xml:lang="en">This element is intended for use in Item entity records.</skos:scopeNote>
+        <dct:identifier>R1076</dct:identifier>
+        <dct:identifier>21115</dct:identifier>
+        <rdfs:label xml:lang="en">has uniform resource locator (item)</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 4.6 of the RDA Toolkit.</skos:note>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/variantAccessPoint">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>R1093</dct:identifier>
+        <skos:definition xml:lang="en">An alternative to the authorized access point</skos:definition>
+        <dct:identifier>21147</dct:identifier>
+        <rdfs:label xml:lang="en">has variant access point</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/variantAccessPointCorporateBody">
+        <skos:definition xml:lang="en">An alternative to the authorized access point representing a Corporate Body</skos:definition>
+        <dct:identifier>21125</dct:identifier>
+        <rdfs:label xml:lang="en">has variant access point</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in CorporateBody entity records.</skos:scopeNote>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 11.13.2 of the RDA Toolkit.</skos:note>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>R1084</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/variantAccessPointExpression">
+        <dct:identifier>R1077</dct:identifier>
+        <rdfs:label xml:lang="en">has variant access point</rdfs:label>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 6.27.4.5 of the RDA Toolkit.</skos:note>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Expression entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>21118</dct:identifier>
+        <skos:definition xml:lang="en">An alternative to the authorized access point representing an Expression</skos:definition>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/variantAccessPointFamily">
+        <dct:identifier>21123</dct:identifier>
+        <skos:definition xml:lang="en">An alternative to the authorized access point representing a Family</skos:definition>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 10.11.2 of the RDA Toolkit.</skos:note>
+        <dct:identifier>R1082</dct:identifier>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Family entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <rdfs:label xml:lang="en">has variant access point</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/variantAccessPointPerson">
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 9.19.2 of the RDA Toolkit.</skos:note>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Person entity records.</skos:scopeNote>
+        <dct:identifier>21121</dct:identifier>
+        <skos:definition xml:lang="en">An alternative to the authorized access point representing a Person</skos:definition>
+        <rdfs:label xml:lang="en">has variant access point</rdfs:label>
+        <dct:identifier>R1080</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/variantAccessPointPlace">
+        <dct:identifier>R1137</dct:identifier>
+        <dct:identifier>21159</dct:identifier>
+        <rdfs:label xml:lang="en">has variant access point</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Place entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 16.4.2 of the RDA Toolkit.</skos:note>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/variantAccessPointWork">
+        <skos:note xml:lang="en">This element is intended to support the concept defined by 6.27.4 of the RDA Toolkit.</skos:note>
+        <dct:identifier>R1078</dct:identifier>
+        <skos:definition xml:lang="en">An alternative to the authorized access point representing a Work</skos:definition>
+        <rdfs:label xml:lang="en">has variant access point</rdfs:label>
+        <skos:scopeNote xml:lang="en">This element is intended for use in Work entity records.</skos:scopeNote>
+        <rdfs:isDefinedBy rdf:resource="http://rimmf.com/vocab/"/>
+        <dct:identifier>21119</dct:identifier>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://rimmf.com/vocab/hasAapComponentFlag">
+    </owl:AnnotationProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
